@@ -1,4 +1,4 @@
 ---
-redirect_to: https://coinbase.com/join/twingo?src=ios-link
+redirect_to: https://coinbase.com/join/twingo
 permalink: /coin/
 ---

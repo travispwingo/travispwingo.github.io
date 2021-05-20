@@ -21,18 +21,18 @@
 title: Travis Wingo
 email: travis.wingo@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Personal Finance Nerd, Futurist, Software Engineer, Mountain Biker, & Rower
+  Personal Finance Nerd, Youtuber, Software Engineer, Mountain Biker, & Rower
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
+show_excerpts: true
+
 youtube_username: traviswingo
-twitter_username: travispwingo
-github_username:  travispwingo
+# twitter_username: travispwingo
 
 # Build settings
 theme: minima
 plugins:
-  - jekyll-feed
   - jekyll-redirect-from
 
 # Exclude from processing.
