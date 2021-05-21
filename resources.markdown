@@ -4,10 +4,10 @@ title: Resources
 permalink: /resources/
 ---
 
-Signup bonuses from awesome partners and services we use!
+### Signup bonuses from awesome partners and services.
 
-_Disclaimer:_ The below are affiliate links for which we receive a fee upon successful action,
-but they are also all products we use.
+_Disclaimer:_ The below are affiliate links for which I receive a small fee if you sign up,
+but they're all products I use and love!
 
 ### [Webull](https://traviswingo.com/webull)
 
@@ -17,9 +17,9 @@ Get 2 FREE stocks valued up to $1850 when you deposit $100 or more on Webull.
 
 Get $30 FREE for creating a new account with M1 Finance
 
-### [BLockFi](https://traviswingo.com/bf)
+### [BlockFi](https://traviswingo.com/bf)
 
-Get $10 in BTC when you create a new account at BlockFi and deposit $100 or more.
+Get $10 in BTC when you create a new account at BlockFi and deposit $100 or more, and earn up to **8.6% interest** on your deposits! I keep some cash here because of that.
 
 ### [Coinbase](https://traviswingo.com/coin)
 
