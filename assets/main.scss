@@ -46,15 +46,15 @@ a:hover {
 @media(min-width: 900px) {
   .post-thumbnail {
     float: left;
-    width: 200px;
-    height: 200px;
+    width: 256px;
+    height: 144px;
   }
 }
 
 @media (max-width: 900px) {
   .post-thumbnail {
-    width: 100%;
-    height: 150px;
+    width: 384px;
+    height: 216px;
     background-size: contain;
     margin-left: auto;
     margin-right: auto;
