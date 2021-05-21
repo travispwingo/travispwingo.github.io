@@ -26,7 +26,7 @@ Here's the catch. In order to qualify for being able to contribute to a Health S
 
 An HDHP simply means that your deductible is much higher than a standard plan, so you'll pay more out of pocket before your insurance can cover your expenses. But on the bight side, your monthly premium will be much lower!
 
-According to Healthcare.gov, an HDHP for the 2021 calendar year is as follows:
+According to Healthcare.gov, the deductible limits and out of pocket maximums in an HDHP for the 2021 calendar year are as follows:
 
 |           | Minimum deductible (The amount you pay for health care items and services before your plan starts to pay) | Maximum out-of-pocket costs (The most you’d have to pay if you need more health care items and services) |
 | --- | --- |
