@@ -2,16 +2,16 @@
 layout: post
 author: "Travis Wingo"
 title:  "Unboxing the NO LIMIT Platinum Card by Amex"
-date:   2021-05-13 15:30:00 -0700
+date:   2021-05-29 15:30:00 -0700
 categories: credit cards
-thumbnail: https://icm.aexp-static.com/Internet/Acquisition/US_en/AppContent/OneSite/category/cardarts/platinum-card.png
+thumbnail: assets/images/unboxing-amex-platinum-card.png
 ---
 
 Credit cards seem to have a love/hate reputation with people. Some people love them, and some people absolutely HATE them.
 
-I sit somewhat in between the two groups - I'm not in love with credit cards, but certain cards can be used properly as TOOLS to help lessen the financial burden of normal spending.
+I sit somewhat in between the two groups - I'm not in love with credit cards, but certain cards can be used properly as *TOOLS* to help lessen the financial burden of normal spending - to offset costs, if you will.
 
-If someone offered you 5% back on everything you were going to buy anyways, or points towards travel on purchases you were already going to make, you'd be silly not to take that offer.
+If someone offered you 5% back on everything you were going to buy anyways, or points towards travel on purchases you were already going to make, you'd be silly not to take that offer!
 
 So here we are, unboxing and reviewing the new Platinum card from American Express that just came in the mail.
 
@@ -19,11 +19,11 @@ After the unboxing, I'm going to go through all of the various benefits and offe
 
 <a href="https://traviswingo.com/platinum" class="btn">Apply for the Platinum card</a>
 
-*Unbox and comment*
+*VIEW THE VIDEO BELOW FOR UNBOXING*
 
-So now let's go over all of the benefits of the Platinum Card from American Express in 2021.
+The benefits list for the Amex Platinum card is extensive. Let's start with the most important - the signup bonus.
 
-First off we need to start with the signup bonus, which actually ranges from 75,000 points to 125,000 points for random reasons I'm not really sure of. I actually do think it's random...
+The Amex platinum card has a signup bonus ranging from 75,000-125,000 points, depending on when you visit the website. I've noticed if you keep a tab open on the website for a while, you be presented with a "session expired" alert. Clicking "refreshing session" to close the alert will bump the point offer for you.
 
 I personally applied for the card under the 75,000 point bonus offer, but soon after being approved I started seeing the 100,000 point offer on their website - go figure. I've yet to see the 125,000 point signup offer advertised to me, but I'd recommend just refreshing your session a bunch of times until the best offer presents itself before applying.
 
@@ -39,7 +39,7 @@ In addition to the 75,000 rewards points offer, Amex also gives **10x points** o
 
 We definitely won't be spending $15,000 at gas stations and supermarkets in the next 6 months (maybe 12 months), but this is still a nice bonus *on top of* the 75,000 rewards points, and I believe they can overlap. That means you can spend $5,000 at gas stations and supermarkets over the next 6 months, get 75,000 rewards points, plus earn 10x points per dollar for a total of 50,000 + 75,000 = 125,000 points. 150,000 or 175,000 if you received the 100k or 125k signup offers, respectively.
 
-Be advised in the fine print Amex does not deem marina or jet fuel as an *eligible purchase*. For those with boats or planes, sorry :).
+Be advised in the fine print Amex does not deem marina or jet fuel as an *eligible purchase*. For those with boats or planes...sorry 🙂.
 
 Moving on to other ways to earn with the Amex Platinum card, and the main reasons for getting this card!
 
@@ -192,3 +192,5 @@ Personally, we'll be running enough through this card annually to essentially re
 <a href="https://traviswingo.com/platinum" class="btn">Apply for the Platinum card</a>
 
 If you hate reading, the video version, as always, is below. See ya next time :).
+
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/yIP67kaUOio" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

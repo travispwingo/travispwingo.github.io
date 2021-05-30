@@ -15,8 +15,7 @@ a, a:visited, a:hover {
 }
 
 a:hover {
-  text-decoration: none;
-  color: $cyan;
+  text-decoration: underline;
 }
 
 .clearfix {
@@ -53,7 +52,7 @@ a:hover {
 
 @media (max-width: 900px) {
   .post-thumbnail {
-    width: 384px;
+    width: 100%;
     height: 216px;
     background-size: contain;
     margin-left: auto;

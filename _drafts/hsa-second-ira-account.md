@@ -93,3 +93,5 @@ Therefore, the HSA is a sort of special IRA if you think about it. If not used f
 And over a long enough time frame, those little checkups and minor accidents can add up to quite a bit, so you could end up withdrawing a healthy sum from your HSA TAX FREE in retirement, so long as you keep the receipts 😉.
 
 As always, the video version of this post is below. Thanks for reading, and i'll see you next time.
+
+*VIDEO COMING SOON.*
