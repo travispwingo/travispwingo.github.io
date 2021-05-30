@@ -2,7 +2,7 @@
 layout: post
 author: "Travis Wingo"
 title:  "Unboxing the NO LIMIT Platinum Card by Amex"
-date:   2021-05-29 15:30:00 -0700
+date:   2021-05-31 15:30:00 -0700
 categories: credit cards
 thumbnail: assets/images/unboxing-amex-platinum-card.png
 ---
@@ -191,6 +191,6 @@ Personally, we'll be running enough through this card annually to essentially re
 
 <a href="https://traviswingo.com/platinum" class="btn">Apply for the Platinum card</a>
 
-If you hate reading, the video version, as always, is below. See ya next time :).
+If you hate reading, the video version, as always, is below. See ya next time 🙂.
 
 <iframe width="100%" height="315" src="https://www.youtube.com/embed/yIP67kaUOio" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
