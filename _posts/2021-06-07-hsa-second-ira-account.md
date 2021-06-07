@@ -6,7 +6,6 @@ date:   2021-06-07 15:00:00 -0700
 categories: retirement
 thumbnail: assets/images/double-retirement-with-hsa.png
 ---
-What’s up you guys it’s Travis here. 
 
 When it comes to legally avoiding paying taxes on my money and my investment growth, I like to take advantage of every single account type out there. Because, worst case scenario, if I don’t retire early I’ll at least have maximized every type of retirement account for many years and sheltered hundreds of thousands of dollars from taxation. That’s a worst case scenario we should all aim to achieve.
 
