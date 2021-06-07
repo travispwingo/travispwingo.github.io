@@ -1,10 +1,10 @@
 ---
 layout: post
 author: "Travis Wingo"
-title:  "DOUBLE Your IRA Contributions With an HSA"
-date:   2021-05-13 15:30:00 -0700
+title:  "DOUBLE Your Retirement Savings With an HSA"
+date:   2021-06-07 15:00:00 -0700
 categories: retirement
-thumbnail: 
+thumbnail: assets/images/double-retirement-with-hsa.png
 ---
 What’s up you guys it’s Travis here. 
 
@@ -94,4 +94,4 @@ And over a long enough time frame, those little checkups and minor accidents can
 
 As always, the video version of this post is below. Thanks for reading, and i'll see you next time.
 
-*VIDEO COMING SOON.*
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/Fg5qacLCTKQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
