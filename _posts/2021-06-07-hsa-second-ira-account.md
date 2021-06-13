@@ -3,7 +3,6 @@ layout: post
 author: "Travis Wingo"
 title:  "DOUBLE Your Retirement Savings With an HSA"
 date:   2021-06-07 15:00:00 -0700
-categories: retirement
 thumbnail: assets/images/double-retirement-with-hsa.png
 ---
 

@@ -3,7 +3,6 @@ layout: post
 author: "Travis Wingo"
 title:  "How to AVOID Paying Taxes Like a BILLIONAIRE"
 date:   2021-06-14 15:00:00 -0700
-categories: taxes
 thumbnail: assets/images/avoid-taxes-billionaire.png
 ---
 

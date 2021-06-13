@@ -3,7 +3,6 @@ layout: post
 author: "Travis Wingo"
 title:  "Unboxing the NO LIMIT Platinum Card by Amex"
 date:   2021-05-31 15:30:00 -0700
-categories: credit cards
 thumbnail: assets/images/unboxing-amex-platinum-card.png
 ---
 
