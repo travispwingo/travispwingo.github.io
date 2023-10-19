@@ -36,6 +36,8 @@ show_excerpts: true
 # theme: minima
 plugins:
   - jekyll-redirect-from
+  - jekyll-feed
+  - jekyll-seo-tag
 
 # Exclude from processing.
 # The following items will not be processed, by default.
