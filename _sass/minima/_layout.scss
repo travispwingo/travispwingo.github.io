@@ -10,6 +10,7 @@
   -webkit-backdrop-filter: saturate(180%) blur(20px);
   backdrop-filter: saturate(180%) blur(20px);
   background-color: rgba(255,255,255,0.7);
+  z-index: 9999;
 
   // Positioning context for the mobile navigation icon
   // position: relative;
@@ -219,6 +220,21 @@
 .post-link {
   display: block;
   @include relative-font-size(1.5);
+  font-weight: 700;
+}
+
+.post-thumbnail {
+  background-size: cover;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 20rem;
+  min-height: auto;
+  transition: transform 0.5s;
+
+  &:hover {
+    transform: scale(1.01);
+  }
 }
 
 

@@ -16,7 +16,7 @@ layout: default
       <li>
         {%- if post.thumbnail -%}
           <a class="post-link" href="{{ post.url | relative_url }}">
-            <img class="post-thumbnail" src="{{ post.thumbnail }}" />
+            <div class="post-thumbnail" style="background-image: url({{ post.thumbnail }})"></div>
           </a>
         {%- endif -%}
         <h3>
