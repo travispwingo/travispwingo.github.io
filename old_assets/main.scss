@@ -1,0 +1,66 @@
+---
+---
+
+// @import "{{ site.theme }}";
+
+$green-color: #40D7BC;
+$cyan: #0dcaf0;
+
+body {
+  background-color: white;
+  font-family: "Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+
+.clearfix {
+  overflow: auto;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.site-header {
+  border-top: 0;
+}
+
+.post-thumbnail {
+  display: block;
+  margin: 0;
+}
+
+@media(min-width: 900px) {
+  .post-thumbnail {
+    width: 10%;
+    min-height: 25rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 900px) {
+  .post-thumbnail {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.btn {
+  display: inline-block;
+  align: center;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  background-color: $cyan;
+  color: white !important;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.post-meta {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
