@@ -29,11 +29,7 @@ timezone: America/Los_Angeles
 
 show_excerpts: true
 
-# youtube_username: traviswingo
-# twitter_username: travispwingo
-
 # Build settings
-# theme: minima
 plugins:
   - jekyll-redirect-from
   - jekyll-feed
