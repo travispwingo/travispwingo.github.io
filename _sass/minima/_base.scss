@@ -30,7 +30,6 @@ body {
 }
 
 
-
 /**
  * Set `margin-bottom` to maintain vertical rhythm
  */
@@ -252,5 +251,24 @@ table {
   }
   td {
     border: 1px solid $grey-color-light;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    color: $text-color-dark-mode;
+    background-color: $background-color-dark-mode;
+  }
+
+  a,
+  a:visited {
+    color: $text-color-dark-mode;
+  }
+
+  pre,
+  code {
+    border: 1px solid $grey-color-dark;
+    border-radius: 3px;
+    background-color: lighten($background-color-dark-mode, 10%);
   }
 }

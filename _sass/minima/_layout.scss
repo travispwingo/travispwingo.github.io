@@ -237,8 +237,8 @@
 .post-thumbnail {
   background-size: cover;
   width: 100%;
-  // margin-left: auto;
-  // margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
   height: 20rem;
   min-height: auto;
   transition: transform 0.5s;
@@ -300,6 +300,32 @@
 
     @include media-query($on-laptop) {
       @include relative-font-size(1.125);
+    }
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+
+  .post-list {
+    > li {
+      background-color: lighten($background-color-dark-mode, 5%);
+    }
+  }
+  .site-header {
+    color: $text-color-dark-mode;
+    background-color: rgba(27, 26, 26, 0.7);
+  }
+
+  .site-title {
+    &,
+    &:visited {
+      color: $text-color-dark-mode;
+    }
+  }
+
+  .site-nav {
+    .page-link {
+      color: $text-color-dark-mode;
     }
   }
 }

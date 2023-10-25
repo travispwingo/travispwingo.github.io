@@ -69,3 +69,13 @@
   .vi    { color: #008080 } // Name.Variable.Instance
   .il    { color: #099 } // Literal.Number.Integer.Long
 }
+
+@media (prefers-color-scheme: dark) {
+  .highlight {
+    background-color: lighten($background-color-dark-mode, 10%);
+
+    .highlighter-rouge & {
+      background-color: lighten($background-color-dark-mode, 10%);
+    }
+  }
+}
