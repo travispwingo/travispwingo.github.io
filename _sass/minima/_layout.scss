@@ -327,5 +327,16 @@
     .page-link {
       color: $text-color-dark-mode;
     }
+
+    @include media-query($on-palm) {
+      background-color: rgba(27, 26, 26, 0.7);
+      border: 1px solid $grey-color-dark;
+
+      .menu-icon {
+        > svg {
+          fill: $grey-color-light;
+        }
+      }
+    }
   }
 }
