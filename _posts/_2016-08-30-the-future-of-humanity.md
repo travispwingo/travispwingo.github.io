@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "The Future of Humanity"
-date:   2016-08-30 07:00:00
+date:   2023-10-28 07:00:00
 categories: rants
 ---
 

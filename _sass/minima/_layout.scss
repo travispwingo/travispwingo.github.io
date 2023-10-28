@@ -27,6 +27,7 @@
   &,
   &:visited {
     color: $grey-color-dark;
+		text-decoration: none;
   }
 }
 
@@ -45,10 +46,10 @@
   .page-link {
     color: $text-color;
     line-height: $base-line-height;
+		font-weight: 600;
 
     &:hover {
       color: $brand-color;
-      text-decoration: none;
     }
 
     // Gaps between nav items, but not on the last one
@@ -209,7 +210,8 @@
 
   > li {
     background-color: $white;
-    border-radius: 1.5rem;
+    border-radius: 0.8rem;
+		border: 1px solid $grey-color-light;
     margin-bottom: $spacing-unit;
     padding: 1rem;
   }
@@ -225,6 +227,7 @@
   display: block;
   @include relative-font-size(1.5);
   font-weight: 700;
+	text-decoration: none;
 }
 
 .post-thumbnail-container {
