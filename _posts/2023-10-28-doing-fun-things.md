@@ -1,8 +1,8 @@
 ---
 layout: post
+author: "Travis Wingo"
 title:  "Doing Things for Fun, Not Profit."
 date:   2023-10-28 07:00:00
-categories: rants
 thumbnail: assets/images/bryan-goff-RF4p4rTM-2s-unsplash.jpg
 ---
 
