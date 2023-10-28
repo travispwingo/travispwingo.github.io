@@ -23,4 +23,4 @@ Life is too short to always be working (whatever work means to you). If you're n
 
 I'm still going to keep building, investing, growing...but be mindful of my motivations and stressors. Building things people want is a passion of mine, but burning myself out to compete in a never-ending race isn't for me.
 
-Now if you'll excuse me, I have to go learn how to properly align my new equitorial mount so I can take long-exposure photos of distant galaxies...just because I think it's cool.
+Now if you'll excuse me, I have to go learn how to properly align my new equatorial mount so I can take long-exposure photos of distant galaxies...just because I think it's cool.
