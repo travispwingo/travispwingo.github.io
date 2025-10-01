@@ -1,4 +1,6 @@
 @charset "utf-8";
+@use "sass:color";
+@use "sass:math";
 
 // Define defaults for each variable.
 
@@ -20,8 +22,8 @@ $text-color-dark-mode: $white !default;
 $background-color-dark-mode: $text-color !default;
 
 $grey-color:       #828282 !default;
-$grey-color-light: lighten($grey-color, 40%) !default;
-$grey-color-dark:  darken($grey-color, 25%) !default;
+$grey-color-light: color.adjust($grey-color, $lightness: 40%) !default;
+$grey-color-dark:  color.adjust($grey-color, $lightness: -25%) !default;
 
 $table-text-align: left !default;
 

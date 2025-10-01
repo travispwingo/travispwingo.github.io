@@ -1,3 +1,5 @@
+@use "sass:color";
+
 /**
  * Syntax highlighting styles
  */
@@ -72,10 +74,10 @@
 
 @media (prefers-color-scheme: dark) {
   .highlight {
-    background-color: lighten($background-color-dark-mode, 10%);
+    background-color: color.adjust($background-color-dark-mode, $lightness: 10%);
 
     .highlighter-rouge & {
-      background-color: lighten($background-color-dark-mode, 10%);
+      background-color: color.adjust($background-color-dark-mode, $lightness: 10%);
     }
   }
 }

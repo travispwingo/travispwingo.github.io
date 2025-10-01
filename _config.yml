@@ -20,7 +20,7 @@
 
 title: Travis Wingo
 description: >- # this means to ignore newlines until "baseurl:"
-  Founder, Engineer, Investor, Finance Nerd
+  Father, Software Engineer, Mountain Biker, Rower, Finance Nerd
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://traviswingo.com" # the base hostname & protocol for your site, e.g. http://example.com
 
