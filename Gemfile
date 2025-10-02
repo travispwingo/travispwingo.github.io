@@ -10,7 +10,13 @@ ruby "3.4.2"
 #
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
-gem "jekyll", "~> 4.4.1"
+gem "jekyll", "~> 3.10.0"
+
+# Required gems for Ruby 3.4+ compatibility
+gem "base64"
+gem "logger"
+gem "bigdecimal"
+gem "kramdown-parser-gfm"
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
 # gem "minima", "~> 2.5"
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
