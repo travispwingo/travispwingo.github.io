@@ -70,6 +70,3 @@ amps, but in our garden hose example, think of it as how quickly we can fill up
 a bucket with water from the hose. It is also the _product_ of volts and amps -
 expressed as the rate at which work is done when one ampere (A) of current flows
 through the line with one volt (V) of electric potential.
-
-To conclude, <b>volts</b> are the water pressure, <b>amps</b> are the flow rate,
-and <b>watts</b> are the rate at which we can fill a bucket with water.
