@@ -73,10 +73,10 @@
 
 @media (prefers-color-scheme: dark) {
   .highlight {
-    background-color: lighten($background-color-dark-mode, 10%);
+    background-color: #363639;
 
     .highlighter-rouge & {
-      background-color: lighten($background-color-dark-mode, 10%);
+      background-color: #363639;
     }
   }
 }

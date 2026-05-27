@@ -20,8 +20,8 @@ $text-color-dark-mode: $white !default;
 $background-color-dark-mode: $text-color !default;
 
 $grey-color:       #828282 !default;
-$grey-color-light: lighten($grey-color, 40%) !default;
-$grey-color-dark:  darken($grey-color, 25%) !default;
+$grey-color-light: #e8e8e8 !default;
+$grey-color-dark:  #424242 !default;
 
 $table-text-align: left !default;
 

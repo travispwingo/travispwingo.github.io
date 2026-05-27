@@ -28,6 +28,10 @@ timezone: America/Los_Angeles
 
 show_excerpts: true
 
+sass:
+  silence_deprecations:
+    - import
+
 # Build settings
 plugins:
   - jekyll-redirect-from

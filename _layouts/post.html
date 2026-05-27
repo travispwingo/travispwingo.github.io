@@ -15,6 +15,12 @@ layout: default
       {%- endif -%}</p>
   </header>
 
+  {%- if page.thumbnail -%}
+    <div class="post-hero">
+      <img src="{{ page.thumbnail | relative_url }}" alt="{{ page.title | escape }}" />
+    </div>
+  {%- endif -%}
+
   <div class="post-content e-content" itemprop="articleBody">
     {{ content }}
   </div>

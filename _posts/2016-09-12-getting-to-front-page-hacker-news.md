@@ -21,8 +21,6 @@ then continued to climb for the next 12 hours, and stay for the next 24.
 
 ### I stayed stagnant at #2 for most of the time, hitting #1 only for a few minutes.
 
-![Front Page](/assets/images/hn_2.png)
-
 ### The traffic to my project was unreal...considering it had literally been live for 20 mins before posting.
 
 ![Google Analytics](/assets/images/hn_front_analytics.png)
