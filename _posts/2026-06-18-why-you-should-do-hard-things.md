@@ -6,16 +6,6 @@ date:   2026-06-18 07:00:00
 thumbnail: assets/images/clearing-overgrown-brush.jpg
 ---
 
-## Notes
-
-- It's common to want to do easy things
-- Doing hard things is becoming a lost skill
-- The less hard things you do, the worse you get at dealing with actual struggle
-- Do hard things in bite-sized chunks
-- Doing hard things makes you feel superhuman
-- Doing hard things feels way better than doing easy things
-- Doing hard things improves your self-confidence
-
 We, as a society, are becoming more and more lazy. The content we consume is shorter, the dopamine hits are harder, and everything (including our own thinking) is being automated away. There's no way this is healthy or positive in the long term, and I've come to realize that there's a secret hack to life that puts you ahead most people without having to do anything special - doing hard things.
 
 ## We're getting too comfortable, and less capable
