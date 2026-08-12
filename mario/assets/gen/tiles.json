@@ -1,0 +1,12 @@
+{
+ "index": {
+  "brick": 4,
+  "ground_fill": 2,
+  "ground_top": 1,
+  "stone": 3
+ },
+ "margin": 1,
+ "spacing": 2,
+ "tileHeight": 32,
+ "tileWidth": 32
+}

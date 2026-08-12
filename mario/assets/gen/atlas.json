@@ -1,0 +1,4814 @@
+{
+ "frames": {
+  "castle": {
+   "frame": {
+    "h": 160,
+    "w": 160,
+    "x": 2,
+    "y": 2
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 160,
+    "w": 160
+   },
+   "spriteSourceSize": {
+    "h": 160,
+    "w": 160,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "coin_1": {
+   "frame": {
+    "h": 32,
+    "w": 32,
+    "x": 400,
+    "y": 598
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 32,
+    "w": 32
+   },
+   "spriteSourceSize": {
+    "h": 32,
+    "w": 32,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "coin_2": {
+   "frame": {
+    "h": 32,
+    "w": 32,
+    "x": 434,
+    "y": 598
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 32,
+    "w": 32
+   },
+   "spriteSourceSize": {
+    "h": 32,
+    "w": 32,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "coin_3": {
+   "frame": {
+    "h": 32,
+    "w": 32,
+    "x": 468,
+    "y": 598
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 32,
+    "w": 32
+   },
+   "spriteSourceSize": {
+    "h": 32,
+    "w": 32,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "coin_4": {
+   "frame": {
+    "h": 32,
+    "w": 32,
+    "x": 502,
+    "y": 598
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 32,
+    "w": 32
+   },
+   "spriteSourceSize": {
+    "h": 32,
+    "w": 32,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "enemy_r0_c0": {
+   "frame": {
+    "h": 42,
+    "w": 32,
+    "x": 428,
+    "y": 546
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 42,
+    "w": 32
+   },
+   "spriteSourceSize": {
+    "h": 42,
+    "w": 32,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "enemy_r0_c1": {
+   "frame": {
+    "h": 40,
+    "w": 32,
+    "x": 628,
+    "y": 546
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 40,
+    "w": 32
+   },
+   "spriteSourceSize": {
+    "h": 40,
+    "w": 32,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "enemy_r0_c2": {
+   "frame": {
+    "h": 42,
+    "w": 32,
+    "x": 462,
+    "y": 546
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 42,
+    "w": 32
+   },
+   "spriteSourceSize": {
+    "h": 42,
+    "w": 32,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "enemy_r0_c3": {
+   "frame": {
+    "h": 32,
+    "w": 22,
+    "x": 536,
+    "y": 598
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 32,
+    "w": 22
+   },
+   "spriteSourceSize": {
+    "h": 32,
+    "w": 22,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "enemy_r10_c0": {
+   "frame": {
+    "h": 32,
+    "w": 32,
+    "x": 560,
+    "y": 598
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 32,
+    "w": 32
+   },
+   "spriteSourceSize": {
+    "h": 32,
+    "w": 32,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "enemy_r10_c1": {
+   "frame": {
+    "h": 32,
+    "w": 32,
+    "x": 594,
+    "y": 598
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 32,
+    "w": 32
+   },
+   "spriteSourceSize": {
+    "h": 32,
+    "w": 32,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "enemy_r10_c2": {
+   "frame": {
+    "h": 32,
+    "w": 32,
+    "x": 628,
+    "y": 598
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 32,
+    "w": 32
+   },
+   "spriteSourceSize": {
+    "h": 32,
+    "w": 32,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "enemy_r10_c3": {
+   "frame": {
+    "h": 32,
+    "w": 32,
+    "x": 662,
+    "y": 598
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 32,
+    "w": 32
+   },
+   "spriteSourceSize": {
+    "h": 32,
+    "w": 32,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "enemy_r1_c0": {
+   "frame": {
+    "h": 42,
+    "w": 32,
+    "x": 496,
+    "y": 546
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 42,
+    "w": 32
+   },
+   "spriteSourceSize": {
+    "h": 42,
+    "w": 32,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "enemy_r1_c1": {
+   "frame": {
+    "h": 40,
+    "w": 32,
+    "x": 662,
+    "y": 546
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 40,
+    "w": 32
+   },
+   "spriteSourceSize": {
+    "h": 40,
+    "w": 32,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "enemy_r1_c2": {
+   "frame": {
+    "h": 42,
+    "w": 32,
+    "x": 530,
+    "y": 546
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 42,
+    "w": 32
+   },
+   "spriteSourceSize": {
+    "h": 42,
+    "w": 32,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "enemy_r1_c3": {
+   "frame": {
+    "h": 32,
+    "w": 23,
+    "x": 696,
+    "y": 598
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 32,
+    "w": 23
+   },
+   "spriteSourceSize": {
+    "h": 32,
+    "w": 23,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "enemy_r2_c0": {
+   "frame": {
+    "h": 32,
+    "w": 32,
+    "x": 721,
+    "y": 598
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 32,
+    "w": 32
+   },
+   "spriteSourceSize": {
+    "h": 32,
+    "w": 32,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "enemy_r2_c1": {
+   "frame": {
+    "h": 32,
+    "w": 32,
+    "x": 755,
+    "y": 598
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 32,
+    "w": 32
+   },
+   "spriteSourceSize": {
+    "h": 32,
+    "w": 32,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "enemy_r2_c2": {
+   "frame": {
+    "h": 32,
+    "w": 32,
+    "x": 789,
+    "y": 598
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 32,
+    "w": 32
+   },
+   "spriteSourceSize": {
+    "h": 32,
+    "w": 32,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "enemy_r2_c3": {
+   "frame": {
+    "h": 24,
+    "w": 24,
+    "x": 34,
+    "y": 674
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 24,
+    "w": 24
+   },
+   "spriteSourceSize": {
+    "h": 24,
+    "w": 24,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "enemy_r3_c0": {
+   "frame": {
+    "h": 32,
+    "w": 32,
+    "x": 823,
+    "y": 598
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 32,
+    "w": 32
+   },
+   "spriteSourceSize": {
+    "h": 32,
+    "w": 32,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "enemy_r3_c1": {
+   "frame": {
+    "h": 32,
+    "w": 32,
+    "x": 857,
+    "y": 598
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 32,
+    "w": 32
+   },
+   "spriteSourceSize": {
+    "h": 32,
+    "w": 32,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "enemy_r3_c2": {
+   "frame": {
+    "h": 32,
+    "w": 32,
+    "x": 891,
+    "y": 598
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 32,
+    "w": 32
+   },
+   "spriteSourceSize": {
+    "h": 32,
+    "w": 32,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "enemy_r4_c0": {
+   "frame": {
+    "h": 30,
+    "w": 32,
+    "x": 694,
+    "y": 640
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 30,
+    "w": 32
+   },
+   "spriteSourceSize": {
+    "h": 30,
+    "w": 32,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "enemy_r4_c1": {
+   "frame": {
+    "h": 32,
+    "w": 32,
+    "x": 925,
+    "y": 598
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 32,
+    "w": 32
+   },
+   "spriteSourceSize": {
+    "h": 32,
+    "w": 32,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "enemy_r4_c2": {
+   "frame": {
+    "h": 32,
+    "w": 32,
+    "x": 959,
+    "y": 598
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 32,
+    "w": 32
+   },
+   "spriteSourceSize": {
+    "h": 32,
+    "w": 32,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "enemy_r4_c3": {
+   "frame": {
+    "h": 24,
+    "w": 24,
+    "x": 60,
+    "y": 674
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 24,
+    "w": 24
+   },
+   "spriteSourceSize": {
+    "h": 24,
+    "w": 24,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "enemy_r5_c0": {
+   "frame": {
+    "h": 32,
+    "w": 32,
+    "x": 2,
+    "y": 640
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 32,
+    "w": 32
+   },
+   "spriteSourceSize": {
+    "h": 32,
+    "w": 32,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "enemy_r5_c1": {
+   "frame": {
+    "h": 30,
+    "w": 32,
+    "x": 728,
+    "y": 640
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 30,
+    "w": 32
+   },
+   "spriteSourceSize": {
+    "h": 30,
+    "w": 32,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "enemy_r5_c2": {
+   "frame": {
+    "h": 32,
+    "w": 32,
+    "x": 36,
+    "y": 640
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 32,
+    "w": 32
+   },
+   "spriteSourceSize": {
+    "h": 32,
+    "w": 32,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "enemy_r5_c3": {
+   "frame": {
+    "h": 20,
+    "w": 28,
+    "x": 86,
+    "y": 674
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 20,
+    "w": 28
+   },
+   "spriteSourceSize": {
+    "h": 20,
+    "w": 28,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "enemy_r6_c0": {
+   "frame": {
+    "h": 52,
+    "w": 32,
+    "x": 248,
+    "y": 490
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 52,
+    "w": 32
+   },
+   "spriteSourceSize": {
+    "h": 52,
+    "w": 32,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "enemy_r6_c1": {
+   "frame": {
+    "h": 54,
+    "w": 32,
+    "x": 248,
+    "y": 432
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 54,
+    "w": 32
+   },
+   "spriteSourceSize": {
+    "h": 54,
+    "w": 32,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "enemy_r6_c2": {
+   "frame": {
+    "h": 32,
+    "w": 24,
+    "x": 70,
+    "y": 640
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 32,
+    "w": 24
+   },
+   "spriteSourceSize": {
+    "h": 32,
+    "w": 24,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "enemy_r7_c0": {
+   "frame": {
+    "h": 54,
+    "w": 32,
+    "x": 282,
+    "y": 432
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 54,
+    "w": 32
+   },
+   "spriteSourceSize": {
+    "h": 54,
+    "w": 32,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "enemy_r7_c1": {
+   "frame": {
+    "h": 52,
+    "w": 32,
+    "x": 282,
+    "y": 490
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 52,
+    "w": 32
+   },
+   "spriteSourceSize": {
+    "h": 52,
+    "w": 32,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "enemy_r7_c2": {
+   "frame": {
+    "h": 32,
+    "w": 32,
+    "x": 96,
+    "y": 640
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 32,
+    "w": 32
+   },
+   "spriteSourceSize": {
+    "h": 32,
+    "w": 32,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "enemy_r8_c0": {
+   "frame": {
+    "h": 30,
+    "w": 32,
+    "x": 762,
+    "y": 640
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 30,
+    "w": 32
+   },
+   "spriteSourceSize": {
+    "h": 30,
+    "w": 32,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "enemy_r8_c1": {
+   "frame": {
+    "h": 32,
+    "w": 32,
+    "x": 130,
+    "y": 640
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 32,
+    "w": 32
+   },
+   "spriteSourceSize": {
+    "h": 32,
+    "w": 32,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "enemy_r8_c2": {
+   "frame": {
+    "h": 32,
+    "w": 32,
+    "x": 164,
+    "y": 640
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 32,
+    "w": 32
+   },
+   "spriteSourceSize": {
+    "h": 32,
+    "w": 32,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "enemy_r9_c0": {
+   "frame": {
+    "h": 32,
+    "w": 32,
+    "x": 198,
+    "y": 640
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 32,
+    "w": 32
+   },
+   "spriteSourceSize": {
+    "h": 32,
+    "w": 32,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "enemy_r9_c1": {
+   "frame": {
+    "h": 30,
+    "w": 32,
+    "x": 796,
+    "y": 640
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 30,
+    "w": 32
+   },
+   "spriteSourceSize": {
+    "h": 30,
+    "w": 32,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "enemy_r9_c2": {
+   "frame": {
+    "h": 32,
+    "w": 32,
+    "x": 232,
+    "y": 640
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 32,
+    "w": 32
+   },
+   "spriteSourceSize": {
+    "h": 32,
+    "w": 32,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "enemy_r9_c3": {
+   "frame": {
+    "h": 16,
+    "w": 32,
+    "x": 116,
+    "y": 674
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 16,
+    "w": 32
+   },
+   "spriteSourceSize": {
+    "h": 16,
+    "w": 32,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "flag": {
+   "frame": {
+    "h": 32,
+    "w": 32,
+    "x": 266,
+    "y": 640
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 32,
+    "w": 32
+   },
+   "spriteSourceSize": {
+    "h": 32,
+    "w": 32,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r0_c0": {
+   "frame": {
+    "h": 38,
+    "w": 30,
+    "x": 336,
+    "y": 598
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 38,
+    "w": 30
+   },
+   "spriteSourceSize": {
+    "h": 38,
+    "w": 30,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r0_c1": {
+   "frame": {
+    "h": 40,
+    "w": 28,
+    "x": 696,
+    "y": 546
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 40,
+    "w": 28
+   },
+   "spriteSourceSize": {
+    "h": 40,
+    "w": 28,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r0_c2": {
+   "frame": {
+    "h": 40,
+    "w": 28,
+    "x": 726,
+    "y": 546
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 40,
+    "w": 28
+   },
+   "spriteSourceSize": {
+    "h": 40,
+    "w": 28,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r0_c3": {
+   "frame": {
+    "h": 40,
+    "w": 28,
+    "x": 756,
+    "y": 546
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 40,
+    "w": 28
+   },
+   "spriteSourceSize": {
+    "h": 40,
+    "w": 28,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r0_c4": {
+   "frame": {
+    "h": 40,
+    "w": 28,
+    "x": 786,
+    "y": 546
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 40,
+    "w": 28
+   },
+   "spriteSourceSize": {
+    "h": 40,
+    "w": 28,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r0_c5": {
+   "frame": {
+    "h": 40,
+    "w": 28,
+    "x": 816,
+    "y": 546
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 40,
+    "w": 28
+   },
+   "spriteSourceSize": {
+    "h": 40,
+    "w": 28,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r0_c6": {
+   "frame": {
+    "h": 40,
+    "w": 28,
+    "x": 846,
+    "y": 546
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 40,
+    "w": 28
+   },
+   "spriteSourceSize": {
+    "h": 40,
+    "w": 28,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r0_c7": {
+   "frame": {
+    "h": 38,
+    "w": 30,
+    "x": 368,
+    "y": 598
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 38,
+    "w": 30
+   },
+   "spriteSourceSize": {
+    "h": 38,
+    "w": 30,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r10_c0": {
+   "frame": {
+    "h": 56,
+    "w": 32,
+    "x": 860,
+    "y": 256
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 56,
+    "w": 32
+   },
+   "spriteSourceSize": {
+    "h": 56,
+    "w": 32,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r10_c1": {
+   "frame": {
+    "h": 54,
+    "w": 32,
+    "x": 316,
+    "y": 432
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 54,
+    "w": 32
+   },
+   "spriteSourceSize": {
+    "h": 54,
+    "w": 32,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r10_c2": {
+   "frame": {
+    "h": 56,
+    "w": 32,
+    "x": 894,
+    "y": 256
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 56,
+    "w": 32
+   },
+   "spriteSourceSize": {
+    "h": 56,
+    "w": 32,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r10_c3": {
+   "frame": {
+    "h": 56,
+    "w": 32,
+    "x": 928,
+    "y": 256
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 56,
+    "w": 32
+   },
+   "spriteSourceSize": {
+    "h": 56,
+    "w": 32,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r10_c4": {
+   "frame": {
+    "h": 56,
+    "w": 30,
+    "x": 962,
+    "y": 256
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 56,
+    "w": 30
+   },
+   "spriteSourceSize": {
+    "h": 56,
+    "w": 30,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r10_c5": {
+   "frame": {
+    "h": 56,
+    "w": 30,
+    "x": 2,
+    "y": 316
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 56,
+    "w": 30
+   },
+   "spriteSourceSize": {
+    "h": 56,
+    "w": 30,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r10_c6": {
+   "frame": {
+    "h": 56,
+    "w": 32,
+    "x": 34,
+    "y": 316
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 56,
+    "w": 32
+   },
+   "spriteSourceSize": {
+    "h": 56,
+    "w": 32,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r10_c7": {
+   "frame": {
+    "h": 56,
+    "w": 32,
+    "x": 68,
+    "y": 316
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 56,
+    "w": 32
+   },
+   "spriteSourceSize": {
+    "h": 56,
+    "w": 32,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r10_c8": {
+   "frame": {
+    "h": 54,
+    "w": 32,
+    "x": 350,
+    "y": 432
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 54,
+    "w": 32
+   },
+   "spriteSourceSize": {
+    "h": 54,
+    "w": 32,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r10_c9": {
+   "frame": {
+    "h": 56,
+    "w": 32,
+    "x": 102,
+    "y": 316
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 56,
+    "w": 32
+   },
+   "spriteSourceSize": {
+    "h": 56,
+    "w": 32,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r11_c0": {
+   "frame": {
+    "h": 58,
+    "w": 32,
+    "x": 902,
+    "y": 164
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 58,
+    "w": 32
+   },
+   "spriteSourceSize": {
+    "h": 58,
+    "w": 32,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r11_c1": {
+   "frame": {
+    "h": 54,
+    "w": 30,
+    "x": 384,
+    "y": 432
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 54,
+    "w": 30
+   },
+   "spriteSourceSize": {
+    "h": 54,
+    "w": 30,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r11_c2": {
+   "frame": {
+    "h": 30,
+    "w": 32,
+    "x": 830,
+    "y": 640
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 30,
+    "w": 32
+   },
+   "spriteSourceSize": {
+    "h": 30,
+    "w": 32,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r11_c3": {
+   "frame": {
+    "h": 58,
+    "w": 32,
+    "x": 936,
+    "y": 164
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 58,
+    "w": 32
+   },
+   "spriteSourceSize": {
+    "h": 58,
+    "w": 32,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r11_c4": {
+   "frame": {
+    "h": 62,
+    "w": 32,
+    "x": 766,
+    "y": 164
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 62,
+    "w": 32
+   },
+   "spriteSourceSize": {
+    "h": 62,
+    "w": 32,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r11_c5": {
+   "frame": {
+    "h": 62,
+    "w": 32,
+    "x": 800,
+    "y": 164
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 62,
+    "w": 32
+   },
+   "spriteSourceSize": {
+    "h": 62,
+    "w": 32,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r11_c6": {
+   "frame": {
+    "h": 58,
+    "w": 32,
+    "x": 970,
+    "y": 164
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 58,
+    "w": 32
+   },
+   "spriteSourceSize": {
+    "h": 58,
+    "w": 32,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r11_c7": {
+   "frame": {
+    "h": 30,
+    "w": 32,
+    "x": 864,
+    "y": 640
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 30,
+    "w": 32
+   },
+   "spriteSourceSize": {
+    "h": 30,
+    "w": 32,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r11_c8": {
+   "frame": {
+    "h": 54,
+    "w": 30,
+    "x": 416,
+    "y": 432
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 54,
+    "w": 30
+   },
+   "spriteSourceSize": {
+    "h": 54,
+    "w": 30,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r11_c9": {
+   "frame": {
+    "h": 58,
+    "w": 32,
+    "x": 2,
+    "y": 256
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 58,
+    "w": 32
+   },
+   "spriteSourceSize": {
+    "h": 58,
+    "w": 32,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r12_c0": {
+   "frame": {
+    "h": 56,
+    "w": 32,
+    "x": 136,
+    "y": 316
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 56,
+    "w": 32
+   },
+   "spriteSourceSize": {
+    "h": 56,
+    "w": 32,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r12_c1": {
+   "frame": {
+    "h": 56,
+    "w": 48,
+    "x": 170,
+    "y": 316
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 56,
+    "w": 48
+   },
+   "spriteSourceSize": {
+    "h": 56,
+    "w": 48,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r12_c2": {
+   "frame": {
+    "h": 56,
+    "w": 50,
+    "x": 220,
+    "y": 316
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 56,
+    "w": 50
+   },
+   "spriteSourceSize": {
+    "h": 56,
+    "w": 50,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r12_c3": {
+   "frame": {
+    "h": 56,
+    "w": 50,
+    "x": 272,
+    "y": 316
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 56,
+    "w": 50
+   },
+   "spriteSourceSize": {
+    "h": 56,
+    "w": 50,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r12_c4": {
+   "frame": {
+    "h": 56,
+    "w": 34,
+    "x": 324,
+    "y": 316
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 56,
+    "w": 34
+   },
+   "spriteSourceSize": {
+    "h": 56,
+    "w": 34,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r12_c5": {
+   "frame": {
+    "h": 56,
+    "w": 34,
+    "x": 360,
+    "y": 316
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 56,
+    "w": 34
+   },
+   "spriteSourceSize": {
+    "h": 56,
+    "w": 34,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r12_c6": {
+   "frame": {
+    "h": 56,
+    "w": 50,
+    "x": 396,
+    "y": 316
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 56,
+    "w": 50
+   },
+   "spriteSourceSize": {
+    "h": 56,
+    "w": 50,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r12_c7": {
+   "frame": {
+    "h": 56,
+    "w": 50,
+    "x": 448,
+    "y": 316
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 56,
+    "w": 50
+   },
+   "spriteSourceSize": {
+    "h": 56,
+    "w": 50,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r12_c8": {
+   "frame": {
+    "h": 56,
+    "w": 48,
+    "x": 500,
+    "y": 316
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 56,
+    "w": 48
+   },
+   "spriteSourceSize": {
+    "h": 56,
+    "w": 48,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r12_c9": {
+   "frame": {
+    "h": 56,
+    "w": 32,
+    "x": 550,
+    "y": 316
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 56,
+    "w": 32
+   },
+   "spriteSourceSize": {
+    "h": 56,
+    "w": 32,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r13_c0": {
+   "frame": {
+    "h": 56,
+    "w": 52,
+    "x": 584,
+    "y": 316
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 56,
+    "w": 52
+   },
+   "spriteSourceSize": {
+    "h": 56,
+    "w": 52,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r13_c1": {
+   "frame": {
+    "h": 54,
+    "w": 52,
+    "x": 448,
+    "y": 432
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 54,
+    "w": 52
+   },
+   "spriteSourceSize": {
+    "h": 54,
+    "w": 52,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r13_c2": {
+   "frame": {
+    "h": 56,
+    "w": 52,
+    "x": 638,
+    "y": 316
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 56,
+    "w": 52
+   },
+   "spriteSourceSize": {
+    "h": 56,
+    "w": 52,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r13_c3": {
+   "frame": {
+    "h": 54,
+    "w": 52,
+    "x": 502,
+    "y": 432
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 54,
+    "w": 52
+   },
+   "spriteSourceSize": {
+    "h": 54,
+    "w": 52,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r13_c4": {
+   "frame": {
+    "h": 56,
+    "w": 52,
+    "x": 692,
+    "y": 316
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 56,
+    "w": 52
+   },
+   "spriteSourceSize": {
+    "h": 56,
+    "w": 52,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r13_c5": {
+   "frame": {
+    "h": 56,
+    "w": 52,
+    "x": 746,
+    "y": 316
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 56,
+    "w": 52
+   },
+   "spriteSourceSize": {
+    "h": 56,
+    "w": 52,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r13_c6": {
+   "frame": {
+    "h": 54,
+    "w": 52,
+    "x": 556,
+    "y": 432
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 54,
+    "w": 52
+   },
+   "spriteSourceSize": {
+    "h": 54,
+    "w": 52,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r13_c7": {
+   "frame": {
+    "h": 56,
+    "w": 52,
+    "x": 800,
+    "y": 316
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 56,
+    "w": 52
+   },
+   "spriteSourceSize": {
+    "h": 56,
+    "w": 52,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r13_c8": {
+   "frame": {
+    "h": 54,
+    "w": 52,
+    "x": 610,
+    "y": 432
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 54,
+    "w": 52
+   },
+   "spriteSourceSize": {
+    "h": 54,
+    "w": 52,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r13_c9": {
+   "frame": {
+    "h": 56,
+    "w": 52,
+    "x": 854,
+    "y": 316
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 56,
+    "w": 52
+   },
+   "spriteSourceSize": {
+    "h": 56,
+    "w": 52,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r14_c0": {
+   "frame": {
+    "h": 56,
+    "w": 52,
+    "x": 908,
+    "y": 316
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 56,
+    "w": 52
+   },
+   "spriteSourceSize": {
+    "h": 56,
+    "w": 52,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r14_c1": {
+   "frame": {
+    "h": 56,
+    "w": 52,
+    "x": 962,
+    "y": 316
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 56,
+    "w": 52
+   },
+   "spriteSourceSize": {
+    "h": 56,
+    "w": 52,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r14_c2": {
+   "frame": {
+    "h": 54,
+    "w": 52,
+    "x": 664,
+    "y": 432
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 54,
+    "w": 52
+   },
+   "spriteSourceSize": {
+    "h": 54,
+    "w": 52,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r14_c3": {
+   "frame": {
+    "h": 54,
+    "w": 52,
+    "x": 718,
+    "y": 432
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 54,
+    "w": 52
+   },
+   "spriteSourceSize": {
+    "h": 54,
+    "w": 52,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r14_c4": {
+   "frame": {
+    "h": 56,
+    "w": 52,
+    "x": 2,
+    "y": 374
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 56,
+    "w": 52
+   },
+   "spriteSourceSize": {
+    "h": 56,
+    "w": 52,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r14_c5": {
+   "frame": {
+    "h": 56,
+    "w": 52,
+    "x": 56,
+    "y": 374
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 56,
+    "w": 52
+   },
+   "spriteSourceSize": {
+    "h": 56,
+    "w": 52,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r14_c6": {
+   "frame": {
+    "h": 54,
+    "w": 52,
+    "x": 772,
+    "y": 432
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 54,
+    "w": 52
+   },
+   "spriteSourceSize": {
+    "h": 54,
+    "w": 52,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r14_c7": {
+   "frame": {
+    "h": 54,
+    "w": 52,
+    "x": 826,
+    "y": 432
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 54,
+    "w": 52
+   },
+   "spriteSourceSize": {
+    "h": 54,
+    "w": 52,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r14_c8": {
+   "frame": {
+    "h": 56,
+    "w": 52,
+    "x": 110,
+    "y": 374
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 56,
+    "w": 52
+   },
+   "spriteSourceSize": {
+    "h": 56,
+    "w": 52,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r14_c9": {
+   "frame": {
+    "h": 56,
+    "w": 52,
+    "x": 164,
+    "y": 374
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 56,
+    "w": 52
+   },
+   "spriteSourceSize": {
+    "h": 56,
+    "w": 52,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r15_c0": {
+   "frame": {
+    "h": 54,
+    "w": 52,
+    "x": 880,
+    "y": 432
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 54,
+    "w": 52
+   },
+   "spriteSourceSize": {
+    "h": 54,
+    "w": 52,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r15_c1": {
+   "frame": {
+    "h": 52,
+    "w": 52,
+    "x": 316,
+    "y": 490
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 52,
+    "w": 52
+   },
+   "spriteSourceSize": {
+    "h": 52,
+    "w": 52,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r15_c2": {
+   "frame": {
+    "h": 52,
+    "w": 52,
+    "x": 370,
+    "y": 490
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 52,
+    "w": 52
+   },
+   "spriteSourceSize": {
+    "h": 52,
+    "w": 52,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r15_c3": {
+   "frame": {
+    "h": 56,
+    "w": 52,
+    "x": 218,
+    "y": 374
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 56,
+    "w": 52
+   },
+   "spriteSourceSize": {
+    "h": 56,
+    "w": 52,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r15_c4": {
+   "frame": {
+    "h": 56,
+    "w": 52,
+    "x": 272,
+    "y": 374
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 56,
+    "w": 52
+   },
+   "spriteSourceSize": {
+    "h": 56,
+    "w": 52,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r15_c5": {
+   "frame": {
+    "h": 56,
+    "w": 52,
+    "x": 326,
+    "y": 374
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 56,
+    "w": 52
+   },
+   "spriteSourceSize": {
+    "h": 56,
+    "w": 52,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r15_c6": {
+   "frame": {
+    "h": 56,
+    "w": 52,
+    "x": 380,
+    "y": 374
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 56,
+    "w": 52
+   },
+   "spriteSourceSize": {
+    "h": 56,
+    "w": 52,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r15_c7": {
+   "frame": {
+    "h": 52,
+    "w": 52,
+    "x": 424,
+    "y": 490
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 52,
+    "w": 52
+   },
+   "spriteSourceSize": {
+    "h": 52,
+    "w": 52,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r15_c8": {
+   "frame": {
+    "h": 52,
+    "w": 52,
+    "x": 478,
+    "y": 490
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 52,
+    "w": 52
+   },
+   "spriteSourceSize": {
+    "h": 52,
+    "w": 52,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r15_c9": {
+   "frame": {
+    "h": 54,
+    "w": 52,
+    "x": 934,
+    "y": 432
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 54,
+    "w": 52
+   },
+   "spriteSourceSize": {
+    "h": 54,
+    "w": 52,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r16_c0": {
+   "frame": {
+    "h": 82,
+    "w": 32,
+    "x": 278,
+    "y": 164
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 82,
+    "w": 32
+   },
+   "spriteSourceSize": {
+    "h": 82,
+    "w": 32,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r16_c1": {
+   "frame": {
+    "h": 64,
+    "w": 48,
+    "x": 578,
+    "y": 164
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 64,
+    "w": 48
+   },
+   "spriteSourceSize": {
+    "h": 64,
+    "w": 48,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r16_c2": {
+   "frame": {
+    "h": 52,
+    "w": 54,
+    "x": 532,
+    "y": 490
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 52,
+    "w": 54
+   },
+   "spriteSourceSize": {
+    "h": 52,
+    "w": 54,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r16_c3": {
+   "frame": {
+    "h": 56,
+    "w": 56,
+    "x": 434,
+    "y": 374
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 56,
+    "w": 56
+   },
+   "spriteSourceSize": {
+    "h": 56,
+    "w": 56,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r16_c4": {
+   "frame": {
+    "h": 56,
+    "w": 56,
+    "x": 492,
+    "y": 374
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 56,
+    "w": 56
+   },
+   "spriteSourceSize": {
+    "h": 56,
+    "w": 56,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r16_c5": {
+   "frame": {
+    "h": 52,
+    "w": 54,
+    "x": 588,
+    "y": 490
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 52,
+    "w": 54
+   },
+   "spriteSourceSize": {
+    "h": 52,
+    "w": 54,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r16_c6": {
+   "frame": {
+    "h": 64,
+    "w": 48,
+    "x": 628,
+    "y": 164
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 64,
+    "w": 48
+   },
+   "spriteSourceSize": {
+    "h": 64,
+    "w": 48,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r16_c7": {
+   "frame": {
+    "h": 82,
+    "w": 32,
+    "x": 312,
+    "y": 164
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 82,
+    "w": 32
+   },
+   "spriteSourceSize": {
+    "h": 82,
+    "w": 32,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r17_c0": {
+   "frame": {
+    "h": 40,
+    "w": 32,
+    "x": 876,
+    "y": 546
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 40,
+    "w": 32
+   },
+   "spriteSourceSize": {
+    "h": 40,
+    "w": 32,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r17_c1": {
+   "frame": {
+    "h": 40,
+    "w": 32,
+    "x": 910,
+    "y": 546
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 40,
+    "w": 32
+   },
+   "spriteSourceSize": {
+    "h": 40,
+    "w": 32,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r17_c10": {
+   "frame": {
+    "h": 40,
+    "w": 32,
+    "x": 944,
+    "y": 546
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 40,
+    "w": 32
+   },
+   "spriteSourceSize": {
+    "h": 40,
+    "w": 32,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r17_c11": {
+   "frame": {
+    "h": 40,
+    "w": 30,
+    "x": 978,
+    "y": 546
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 40,
+    "w": 30
+   },
+   "spriteSourceSize": {
+    "h": 40,
+    "w": 30,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r17_c2": {
+   "frame": {
+    "h": 40,
+    "w": 32,
+    "x": 2,
+    "y": 598
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 40,
+    "w": 32
+   },
+   "spriteSourceSize": {
+    "h": 40,
+    "w": 32,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r17_c3": {
+   "frame": {
+    "h": 58,
+    "w": 32,
+    "x": 36,
+    "y": 256
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 58,
+    "w": 32
+   },
+   "spriteSourceSize": {
+    "h": 58,
+    "w": 32,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r17_c4": {
+   "frame": {
+    "h": 58,
+    "w": 32,
+    "x": 70,
+    "y": 256
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 58,
+    "w": 32
+   },
+   "spriteSourceSize": {
+    "h": 58,
+    "w": 32,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r17_c5": {
+   "frame": {
+    "h": 58,
+    "w": 40,
+    "x": 104,
+    "y": 256
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 58,
+    "w": 40
+   },
+   "spriteSourceSize": {
+    "h": 58,
+    "w": 40,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r17_c6": {
+   "frame": {
+    "h": 58,
+    "w": 32,
+    "x": 146,
+    "y": 256
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 58,
+    "w": 32
+   },
+   "spriteSourceSize": {
+    "h": 58,
+    "w": 32,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r17_c7": {
+   "frame": {
+    "h": 58,
+    "w": 40,
+    "x": 180,
+    "y": 256
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 58,
+    "w": 40
+   },
+   "spriteSourceSize": {
+    "h": 58,
+    "w": 40,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r17_c8": {
+   "frame": {
+    "h": 58,
+    "w": 32,
+    "x": 222,
+    "y": 256
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 58,
+    "w": 32
+   },
+   "spriteSourceSize": {
+    "h": 58,
+    "w": 32,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r17_c9": {
+   "frame": {
+    "h": 40,
+    "w": 30,
+    "x": 36,
+    "y": 598
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 40,
+    "w": 30
+   },
+   "spriteSourceSize": {
+    "h": 40,
+    "w": 30,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r18_c0": {
+   "frame": {
+    "h": 40,
+    "w": 32,
+    "x": 68,
+    "y": 598
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 40,
+    "w": 32
+   },
+   "spriteSourceSize": {
+    "h": 40,
+    "w": 32,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r18_c1": {
+   "frame": {
+    "h": 40,
+    "w": 32,
+    "x": 102,
+    "y": 598
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 40,
+    "w": 32
+   },
+   "spriteSourceSize": {
+    "h": 40,
+    "w": 32,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r18_c10": {
+   "frame": {
+    "h": 40,
+    "w": 32,
+    "x": 136,
+    "y": 598
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 40,
+    "w": 32
+   },
+   "spriteSourceSize": {
+    "h": 40,
+    "w": 32,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r18_c11": {
+   "frame": {
+    "h": 40,
+    "w": 30,
+    "x": 170,
+    "y": 598
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 40,
+    "w": 30
+   },
+   "spriteSourceSize": {
+    "h": 40,
+    "w": 30,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r18_c2": {
+   "frame": {
+    "h": 40,
+    "w": 32,
+    "x": 202,
+    "y": 598
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 40,
+    "w": 32
+   },
+   "spriteSourceSize": {
+    "h": 40,
+    "w": 32,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r18_c3": {
+   "frame": {
+    "h": 58,
+    "w": 32,
+    "x": 256,
+    "y": 256
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 58,
+    "w": 32
+   },
+   "spriteSourceSize": {
+    "h": 58,
+    "w": 32,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r18_c4": {
+   "frame": {
+    "h": 58,
+    "w": 32,
+    "x": 290,
+    "y": 256
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 58,
+    "w": 32
+   },
+   "spriteSourceSize": {
+    "h": 58,
+    "w": 32,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r18_c5": {
+   "frame": {
+    "h": 58,
+    "w": 42,
+    "x": 324,
+    "y": 256
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 58,
+    "w": 42
+   },
+   "spriteSourceSize": {
+    "h": 58,
+    "w": 42,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r18_c6": {
+   "frame": {
+    "h": 58,
+    "w": 32,
+    "x": 368,
+    "y": 256
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 58,
+    "w": 32
+   },
+   "spriteSourceSize": {
+    "h": 58,
+    "w": 32,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r18_c7": {
+   "frame": {
+    "h": 58,
+    "w": 42,
+    "x": 402,
+    "y": 256
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 58,
+    "w": 42
+   },
+   "spriteSourceSize": {
+    "h": 58,
+    "w": 42,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r18_c8": {
+   "frame": {
+    "h": 58,
+    "w": 32,
+    "x": 446,
+    "y": 256
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 58,
+    "w": 32
+   },
+   "spriteSourceSize": {
+    "h": 58,
+    "w": 32,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r18_c9": {
+   "frame": {
+    "h": 40,
+    "w": 30,
+    "x": 236,
+    "y": 598
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 40,
+    "w": 30
+   },
+   "spriteSourceSize": {
+    "h": 40,
+    "w": 30,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r1_c0": {
+   "frame": {
+    "h": 48,
+    "w": 32,
+    "x": 36,
+    "y": 546
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 48,
+    "w": 32
+   },
+   "spriteSourceSize": {
+    "h": 48,
+    "w": 32,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r1_c1": {
+   "frame": {
+    "h": 42,
+    "w": 30,
+    "x": 564,
+    "y": 546
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 42,
+    "w": 30
+   },
+   "spriteSourceSize": {
+    "h": 42,
+    "w": 30,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r1_c2": {
+   "frame": {
+    "h": 28,
+    "w": 30,
+    "x": 966,
+    "y": 640
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 28,
+    "w": 30
+   },
+   "spriteSourceSize": {
+    "h": 28,
+    "w": 30,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r1_c3": {
+   "frame": {
+    "h": 40,
+    "w": 32,
+    "x": 268,
+    "y": 598
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 40,
+    "w": 32
+   },
+   "spriteSourceSize": {
+    "h": 40,
+    "w": 32,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r1_c4": {
+   "frame": {
+    "h": 44,
+    "w": 32,
+    "x": 360,
+    "y": 546
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 44,
+    "w": 32
+   },
+   "spriteSourceSize": {
+    "h": 44,
+    "w": 32,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r1_c5": {
+   "frame": {
+    "h": 44,
+    "w": 32,
+    "x": 394,
+    "y": 546
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 44,
+    "w": 32
+   },
+   "spriteSourceSize": {
+    "h": 44,
+    "w": 32,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r1_c6": {
+   "frame": {
+    "h": 40,
+    "w": 32,
+    "x": 302,
+    "y": 598
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 40,
+    "w": 32
+   },
+   "spriteSourceSize": {
+    "h": 40,
+    "w": 32,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r1_c7": {
+   "frame": {
+    "h": 28,
+    "w": 30,
+    "x": 2,
+    "y": 674
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 28,
+    "w": 30
+   },
+   "spriteSourceSize": {
+    "h": 28,
+    "w": 30,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r1_c8": {
+   "frame": {
+    "h": 42,
+    "w": 30,
+    "x": 596,
+    "y": 546
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 42,
+    "w": 30
+   },
+   "spriteSourceSize": {
+    "h": 42,
+    "w": 30,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r1_c9": {
+   "frame": {
+    "h": 48,
+    "w": 32,
+    "x": 70,
+    "y": 546
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 48,
+    "w": 32
+   },
+   "spriteSourceSize": {
+    "h": 48,
+    "w": 32,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r2_c0": {
+   "frame": {
+    "h": 56,
+    "w": 32,
+    "x": 550,
+    "y": 374
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 56,
+    "w": 32
+   },
+   "spriteSourceSize": {
+    "h": 56,
+    "w": 32,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r2_c1": {
+   "frame": {
+    "h": 54,
+    "w": 32,
+    "x": 988,
+    "y": 432
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 54,
+    "w": 32
+   },
+   "spriteSourceSize": {
+    "h": 54,
+    "w": 32,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r2_c2": {
+   "frame": {
+    "h": 56,
+    "w": 32,
+    "x": 584,
+    "y": 374
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 56,
+    "w": 32
+   },
+   "spriteSourceSize": {
+    "h": 56,
+    "w": 32,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r2_c3": {
+   "frame": {
+    "h": 56,
+    "w": 32,
+    "x": 618,
+    "y": 374
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 56,
+    "w": 32
+   },
+   "spriteSourceSize": {
+    "h": 56,
+    "w": 32,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r2_c4": {
+   "frame": {
+    "h": 56,
+    "w": 30,
+    "x": 652,
+    "y": 374
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 56,
+    "w": 30
+   },
+   "spriteSourceSize": {
+    "h": 56,
+    "w": 30,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r2_c5": {
+   "frame": {
+    "h": 56,
+    "w": 30,
+    "x": 684,
+    "y": 374
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 56,
+    "w": 30
+   },
+   "spriteSourceSize": {
+    "h": 56,
+    "w": 30,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r2_c6": {
+   "frame": {
+    "h": 56,
+    "w": 32,
+    "x": 716,
+    "y": 374
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 56,
+    "w": 32
+   },
+   "spriteSourceSize": {
+    "h": 56,
+    "w": 32,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r2_c7": {
+   "frame": {
+    "h": 56,
+    "w": 32,
+    "x": 750,
+    "y": 374
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 56,
+    "w": 32
+   },
+   "spriteSourceSize": {
+    "h": 56,
+    "w": 32,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r2_c8": {
+   "frame": {
+    "h": 54,
+    "w": 32,
+    "x": 2,
+    "y": 490
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 54,
+    "w": 32
+   },
+   "spriteSourceSize": {
+    "h": 54,
+    "w": 32,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r2_c9": {
+   "frame": {
+    "h": 56,
+    "w": 32,
+    "x": 784,
+    "y": 374
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 56,
+    "w": 32
+   },
+   "spriteSourceSize": {
+    "h": 56,
+    "w": 32,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r3_c0": {
+   "frame": {
+    "h": 58,
+    "w": 32,
+    "x": 480,
+    "y": 256
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 58,
+    "w": 32
+   },
+   "spriteSourceSize": {
+    "h": 58,
+    "w": 32,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r3_c1": {
+   "frame": {
+    "h": 56,
+    "w": 32,
+    "x": 818,
+    "y": 374
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 56,
+    "w": 32
+   },
+   "spriteSourceSize": {
+    "h": 56,
+    "w": 32,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r3_c2": {
+   "frame": {
+    "h": 30,
+    "w": 32,
+    "x": 898,
+    "y": 640
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 30,
+    "w": 32
+   },
+   "spriteSourceSize": {
+    "h": 30,
+    "w": 32,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r3_c3": {
+   "frame": {
+    "h": 58,
+    "w": 32,
+    "x": 514,
+    "y": 256
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 58,
+    "w": 32
+   },
+   "spriteSourceSize": {
+    "h": 58,
+    "w": 32,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r3_c4": {
+   "frame": {
+    "h": 62,
+    "w": 32,
+    "x": 834,
+    "y": 164
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 62,
+    "w": 32
+   },
+   "spriteSourceSize": {
+    "h": 62,
+    "w": 32,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r3_c5": {
+   "frame": {
+    "h": 62,
+    "w": 32,
+    "x": 868,
+    "y": 164
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 62,
+    "w": 32
+   },
+   "spriteSourceSize": {
+    "h": 62,
+    "w": 32,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r3_c6": {
+   "frame": {
+    "h": 58,
+    "w": 32,
+    "x": 548,
+    "y": 256
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 58,
+    "w": 32
+   },
+   "spriteSourceSize": {
+    "h": 58,
+    "w": 32,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r3_c7": {
+   "frame": {
+    "h": 30,
+    "w": 32,
+    "x": 932,
+    "y": 640
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 30,
+    "w": 32
+   },
+   "spriteSourceSize": {
+    "h": 30,
+    "w": 32,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r3_c8": {
+   "frame": {
+    "h": 56,
+    "w": 32,
+    "x": 852,
+    "y": 374
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 56,
+    "w": 32
+   },
+   "spriteSourceSize": {
+    "h": 56,
+    "w": 32,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r3_c9": {
+   "frame": {
+    "h": 58,
+    "w": 32,
+    "x": 582,
+    "y": 256
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 58,
+    "w": 32
+   },
+   "spriteSourceSize": {
+    "h": 58,
+    "w": 32,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r4_c0": {
+   "frame": {
+    "h": 56,
+    "w": 32,
+    "x": 886,
+    "y": 374
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 56,
+    "w": 32
+   },
+   "spriteSourceSize": {
+    "h": 56,
+    "w": 32,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r4_c1": {
+   "frame": {
+    "h": 52,
+    "w": 38,
+    "x": 644,
+    "y": 490
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 52,
+    "w": 38
+   },
+   "spriteSourceSize": {
+    "h": 52,
+    "w": 38,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r4_c2": {
+   "frame": {
+    "h": 56,
+    "w": 36,
+    "x": 920,
+    "y": 374
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 56,
+    "w": 36
+   },
+   "spriteSourceSize": {
+    "h": 56,
+    "w": 36,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r4_c3": {
+   "frame": {
+    "h": 54,
+    "w": 36,
+    "x": 36,
+    "y": 490
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 54,
+    "w": 36
+   },
+   "spriteSourceSize": {
+    "h": 54,
+    "w": 36,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r4_c4": {
+   "frame": {
+    "h": 56,
+    "w": 36,
+    "x": 958,
+    "y": 374
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 56,
+    "w": 36
+   },
+   "spriteSourceSize": {
+    "h": 56,
+    "w": 36,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r4_c5": {
+   "frame": {
+    "h": 56,
+    "w": 36,
+    "x": 2,
+    "y": 432
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 56,
+    "w": 36
+   },
+   "spriteSourceSize": {
+    "h": 56,
+    "w": 36,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r4_c6": {
+   "frame": {
+    "h": 54,
+    "w": 36,
+    "x": 74,
+    "y": 490
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 54,
+    "w": 36
+   },
+   "spriteSourceSize": {
+    "h": 54,
+    "w": 36,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r4_c7": {
+   "frame": {
+    "h": 56,
+    "w": 36,
+    "x": 40,
+    "y": 432
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 56,
+    "w": 36
+   },
+   "spriteSourceSize": {
+    "h": 56,
+    "w": 36,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r4_c8": {
+   "frame": {
+    "h": 52,
+    "w": 38,
+    "x": 684,
+    "y": 490
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 52,
+    "w": 38
+   },
+   "spriteSourceSize": {
+    "h": 52,
+    "w": 38,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r4_c9": {
+   "frame": {
+    "h": 56,
+    "w": 32,
+    "x": 78,
+    "y": 432
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 56,
+    "w": 32
+   },
+   "spriteSourceSize": {
+    "h": 56,
+    "w": 32,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r5_c0": {
+   "frame": {
+    "h": 54,
+    "w": 34,
+    "x": 112,
+    "y": 490
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 54,
+    "w": 34
+   },
+   "spriteSourceSize": {
+    "h": 54,
+    "w": 34,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r5_c1": {
+   "frame": {
+    "h": 56,
+    "w": 32,
+    "x": 112,
+    "y": 432
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 56,
+    "w": 32
+   },
+   "spriteSourceSize": {
+    "h": 56,
+    "w": 32,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r5_c2": {
+   "frame": {
+    "h": 56,
+    "w": 32,
+    "x": 146,
+    "y": 432
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 56,
+    "w": 32
+   },
+   "spriteSourceSize": {
+    "h": 56,
+    "w": 32,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r5_c3": {
+   "frame": {
+    "h": 54,
+    "w": 30,
+    "x": 148,
+    "y": 490
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 54,
+    "w": 30
+   },
+   "spriteSourceSize": {
+    "h": 54,
+    "w": 30,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r5_c4": {
+   "frame": {
+    "h": 50,
+    "w": 32,
+    "x": 988,
+    "y": 490
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 50,
+    "w": 32
+   },
+   "spriteSourceSize": {
+    "h": 50,
+    "w": 32,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r5_c5": {
+   "frame": {
+    "h": 50,
+    "w": 32,
+    "x": 2,
+    "y": 546
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 50,
+    "w": 32
+   },
+   "spriteSourceSize": {
+    "h": 50,
+    "w": 32,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r5_c6": {
+   "frame": {
+    "h": 54,
+    "w": 30,
+    "x": 180,
+    "y": 490
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 54,
+    "w": 30
+   },
+   "spriteSourceSize": {
+    "h": 54,
+    "w": 30,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r5_c7": {
+   "frame": {
+    "h": 56,
+    "w": 32,
+    "x": 180,
+    "y": 432
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 56,
+    "w": 32
+   },
+   "spriteSourceSize": {
+    "h": 56,
+    "w": 32,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r5_c8": {
+   "frame": {
+    "h": 56,
+    "w": 32,
+    "x": 214,
+    "y": 432
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 56,
+    "w": 32
+   },
+   "spriteSourceSize": {
+    "h": 56,
+    "w": 32,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r5_c9": {
+   "frame": {
+    "h": 54,
+    "w": 34,
+    "x": 212,
+    "y": 490
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 54,
+    "w": 34
+   },
+   "spriteSourceSize": {
+    "h": 54,
+    "w": 34,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r6_c0": {
+   "frame": {
+    "h": 58,
+    "w": 32,
+    "x": 616,
+    "y": 256
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 58,
+    "w": 32
+   },
+   "spriteSourceSize": {
+    "h": 58,
+    "w": 32,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r6_c1": {
+   "frame": {
+    "h": 52,
+    "w": 64,
+    "x": 724,
+    "y": 490
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 52,
+    "w": 64
+   },
+   "spriteSourceSize": {
+    "h": 52,
+    "w": 64,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r6_c2": {
+   "frame": {
+    "h": 58,
+    "w": 44,
+    "x": 650,
+    "y": 256
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 58,
+    "w": 44
+   },
+   "spriteSourceSize": {
+    "h": 58,
+    "w": 44,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r6_c3": {
+   "frame": {
+    "h": 64,
+    "w": 42,
+    "x": 678,
+    "y": 164
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 64,
+    "w": 42
+   },
+   "spriteSourceSize": {
+    "h": 64,
+    "w": 42,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r6_c4": {
+   "frame": {
+    "h": 58,
+    "w": 40,
+    "x": 696,
+    "y": 256
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 58,
+    "w": 40
+   },
+   "spriteSourceSize": {
+    "h": 58,
+    "w": 40,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r6_c5": {
+   "frame": {
+    "h": 58,
+    "w": 40,
+    "x": 738,
+    "y": 256
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 58,
+    "w": 40
+   },
+   "spriteSourceSize": {
+    "h": 58,
+    "w": 40,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r6_c6": {
+   "frame": {
+    "h": 64,
+    "w": 42,
+    "x": 722,
+    "y": 164
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 64,
+    "w": 42
+   },
+   "spriteSourceSize": {
+    "h": 64,
+    "w": 42,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r6_c7": {
+   "frame": {
+    "h": 58,
+    "w": 44,
+    "x": 780,
+    "y": 256
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 58,
+    "w": 44
+   },
+   "spriteSourceSize": {
+    "h": 58,
+    "w": 44,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r6_c8": {
+   "frame": {
+    "h": 52,
+    "w": 64,
+    "x": 790,
+    "y": 490
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 52,
+    "w": 64
+   },
+   "spriteSourceSize": {
+    "h": 52,
+    "w": 64,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r6_c9": {
+   "frame": {
+    "h": 58,
+    "w": 32,
+    "x": 826,
+    "y": 256
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 58,
+    "w": 32
+   },
+   "spriteSourceSize": {
+    "h": 58,
+    "w": 32,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r7_c0": {
+   "frame": {
+    "h": 46,
+    "w": 64,
+    "x": 104,
+    "y": 546
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 46,
+    "w": 64
+   },
+   "spriteSourceSize": {
+    "h": 46,
+    "w": 64,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r7_c1": {
+   "frame": {
+    "h": 66,
+    "w": 58,
+    "x": 458,
+    "y": 164
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 66,
+    "w": 58
+   },
+   "spriteSourceSize": {
+    "h": 66,
+    "w": 58,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r7_c2": {
+   "frame": {
+    "h": 84,
+    "w": 30,
+    "x": 38,
+    "y": 164
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 84,
+    "w": 30
+   },
+   "spriteSourceSize": {
+    "h": 84,
+    "w": 30,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r7_c3": {
+   "frame": {
+    "h": 76,
+    "w": 54,
+    "x": 346,
+    "y": 164
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 76,
+    "w": 54
+   },
+   "spriteSourceSize": {
+    "h": 76,
+    "w": 54,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r7_c4": {
+   "frame": {
+    "h": 52,
+    "w": 64,
+    "x": 856,
+    "y": 490
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 52,
+    "w": 64
+   },
+   "spriteSourceSize": {
+    "h": 52,
+    "w": 64,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r7_c5": {
+   "frame": {
+    "h": 52,
+    "w": 64,
+    "x": 922,
+    "y": 490
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 52,
+    "w": 64
+   },
+   "spriteSourceSize": {
+    "h": 52,
+    "w": 64,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r7_c6": {
+   "frame": {
+    "h": 76,
+    "w": 54,
+    "x": 402,
+    "y": 164
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 76,
+    "w": 54
+   },
+   "spriteSourceSize": {
+    "h": 76,
+    "w": 54,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r7_c7": {
+   "frame": {
+    "h": 84,
+    "w": 30,
+    "x": 70,
+    "y": 164
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 84,
+    "w": 30
+   },
+   "spriteSourceSize": {
+    "h": 84,
+    "w": 30,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r7_c8": {
+   "frame": {
+    "h": 66,
+    "w": 58,
+    "x": 518,
+    "y": 164
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 66,
+    "w": 58
+   },
+   "spriteSourceSize": {
+    "h": 66,
+    "w": 58,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r7_c9": {
+   "frame": {
+    "h": 46,
+    "w": 64,
+    "x": 170,
+    "y": 546
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 46,
+    "w": 64
+   },
+   "spriteSourceSize": {
+    "h": 46,
+    "w": 64,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r8_c0": {
+   "frame": {
+    "h": 46,
+    "w": 60,
+    "x": 236,
+    "y": 546
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 46,
+    "w": 60
+   },
+   "spriteSourceSize": {
+    "h": 46,
+    "w": 60,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r8_c1": {
+   "frame": {
+    "h": 84,
+    "w": 86,
+    "x": 102,
+    "y": 164
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 84,
+    "w": 86
+   },
+   "spriteSourceSize": {
+    "h": 84,
+    "w": 86,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r8_c2": {
+   "frame": {
+    "h": 90,
+    "w": 86,
+    "x": 806,
+    "y": 2
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 90,
+    "w": 86
+   },
+   "spriteSourceSize": {
+    "h": 90,
+    "w": 86,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r8_c3": {
+   "frame": {
+    "h": 94,
+    "w": 86,
+    "x": 630,
+    "y": 2
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 94,
+    "w": 86
+   },
+   "spriteSourceSize": {
+    "h": 94,
+    "w": 86,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r8_c4": {
+   "frame": {
+    "h": 94,
+    "w": 86,
+    "x": 718,
+    "y": 2
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 94,
+    "w": 86
+   },
+   "spriteSourceSize": {
+    "h": 94,
+    "w": 86,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r8_c5": {
+   "frame": {
+    "h": 90,
+    "w": 86,
+    "x": 894,
+    "y": 2
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 90,
+    "w": 86
+   },
+   "spriteSourceSize": {
+    "h": 90,
+    "w": 86,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r8_c6": {
+   "frame": {
+    "h": 84,
+    "w": 86,
+    "x": 190,
+    "y": 164
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 84,
+    "w": 86
+   },
+   "spriteSourceSize": {
+    "h": 84,
+    "w": 86,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r8_c7": {
+   "frame": {
+    "h": 46,
+    "w": 60,
+    "x": 298,
+    "y": 546
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 46,
+    "w": 60
+   },
+   "spriteSourceSize": {
+    "h": 46,
+    "w": 60,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r9_c0": {
+   "frame": {
+    "h": 90,
+    "w": 34,
+    "x": 982,
+    "y": 2
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 90,
+    "w": 34
+   },
+   "spriteSourceSize": {
+    "h": 90,
+    "w": 34,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r9_c1": {
+   "frame": {
+    "h": 106,
+    "w": 32,
+    "x": 562,
+    "y": 2
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 106,
+    "w": 32
+   },
+   "spriteSourceSize": {
+    "h": 106,
+    "w": 32,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r9_c2": {
+   "frame": {
+    "h": 106,
+    "w": 32,
+    "x": 596,
+    "y": 2
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 106,
+    "w": 32
+   },
+   "spriteSourceSize": {
+    "h": 106,
+    "w": 32,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mario_r9_c3": {
+   "frame": {
+    "h": 90,
+    "w": 34,
+    "x": 2,
+    "y": 164
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 90,
+    "w": 34
+   },
+   "spriteSourceSize": {
+    "h": 90,
+    "w": 34,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mushroom": {
+   "frame": {
+    "h": 32,
+    "w": 32,
+    "x": 300,
+    "y": 640
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 32,
+    "w": 32
+   },
+   "spriteSourceSize": {
+    "h": 32,
+    "w": 32,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "mushroom_1up": {
+   "frame": {
+    "h": 32,
+    "w": 32,
+    "x": 334,
+    "y": 640
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 32,
+    "w": 32
+   },
+   "spriteSourceSize": {
+    "h": 32,
+    "w": 32,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "pipe_body": {
+   "frame": {
+    "h": 32,
+    "w": 58,
+    "x": 368,
+    "y": 640
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 32,
+    "w": 58
+   },
+   "spriteSourceSize": {
+    "h": 32,
+    "w": 58,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "pipe_top": {
+   "frame": {
+    "h": 32,
+    "w": 60,
+    "x": 428,
+    "y": 640
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 32,
+    "w": 60
+   },
+   "spriteSourceSize": {
+    "h": 32,
+    "w": 60,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "pole_ball": {
+   "frame": {
+    "h": 14,
+    "w": 16,
+    "x": 150,
+    "y": 674
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 14,
+    "w": 16
+   },
+   "spriteSourceSize": {
+    "h": 14,
+    "w": 16,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "pole_shaft": {
+   "frame": {
+    "h": 32,
+    "w": 32,
+    "x": 490,
+    "y": 640
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 32,
+    "w": 32
+   },
+   "spriteSourceSize": {
+    "h": 32,
+    "w": 32,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "qblock_1": {
+   "frame": {
+    "h": 32,
+    "w": 32,
+    "x": 524,
+    "y": 640
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 32,
+    "w": 32
+   },
+   "spriteSourceSize": {
+    "h": 32,
+    "w": 32,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "qblock_2": {
+   "frame": {
+    "h": 32,
+    "w": 32,
+    "x": 558,
+    "y": 640
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 32,
+    "w": 32
+   },
+   "spriteSourceSize": {
+    "h": 32,
+    "w": 32,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "qblock_3": {
+   "frame": {
+    "h": 32,
+    "w": 32,
+    "x": 592,
+    "y": 640
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 32,
+    "w": 32
+   },
+   "spriteSourceSize": {
+    "h": 32,
+    "w": 32,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "qblock_4": {
+   "frame": {
+    "h": 32,
+    "w": 32,
+    "x": 626,
+    "y": 640
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 32,
+    "w": 32
+   },
+   "spriteSourceSize": {
+    "h": 32,
+    "w": 32,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "qblock_used": {
+   "frame": {
+    "h": 32,
+    "w": 32,
+    "x": 660,
+    "y": 640
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 32,
+    "w": 32
+   },
+   "spriteSourceSize": {
+    "h": 32,
+    "w": 32,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  },
+  "title_logo": {
+   "frame": {
+    "h": 132,
+    "w": 396,
+    "x": 164,
+    "y": 2
+   },
+   "rotated": false,
+   "sourceSize": {
+    "h": 132,
+    "w": 396
+   },
+   "spriteSourceSize": {
+    "h": 132,
+    "w": 396,
+    "x": 0,
+    "y": 0
+   },
+   "trimmed": false
+  }
+ },
+ "meta": {
+  "format": "RGBA8888",
+  "generator": "tools/build_assets.py",
+  "image": "atlas.png",
+  "scale": "1",
+  "size": {
+   "h": 704,
+   "w": 1024
+  }
+ }
+}

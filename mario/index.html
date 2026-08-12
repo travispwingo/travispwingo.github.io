@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Super Mario World</title>
+<style>
+    html, body {
+        margin: 0;
+        height: 100%;
+        background: #000;
+        overflow: hidden;
+    }
+    /* Phaser's Scale.FIT letterboxes inside this, so the canvas stays centred
+       and correctly proportioned at any window size. */
+    #game {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    canvas {
+        image-rendering: pixelated;
+        image-rendering: crisp-edges;
+        touch-action: none;
+    }
+    #nojs {
+        position: absolute;
+        inset: 0;
+        display: grid;
+        place-content: center;
+        color: #f8d870;
+        font: 14px/1.6 ui-monospace, Menlo, Consolas, monospace;
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+<div id="game"></div>
+<div id="nojs">
+    Loading&hellip;<br />
+    <small>This page must be served over http:// &mdash; opening the file directly will not work.</small>
+</div>
+<script type="module">
+    import './src/main.js';
+    document.getElementById('nojs').remove();
+</script>
+</body>
+</html>
