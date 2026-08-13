@@ -199,6 +199,19 @@ export default class LevelScene extends Phaser.Scene {
     }
 
     createColliders() {
+        // ORDER MATTERS, and only for this one line.
+        //
+        // Arcade runs colliders in registration order within a step, and most
+        // of the ? blocks sit flush between solid tiles in the same row. If the
+        // tilemap is checked first it separates Mario to exactly the tile's
+        // bottom edge -- which is exactly the block's bottom edge too -- and
+        // Arcade's AABB test treats touching edges as not intersecting, so the
+        // block collider that runs next never fires and the block silently
+        // eats the hit. Blocks first; the tilemap pass then finds nothing to do.
+        // The same trap is waiting for `solids` if a pipe ever abuts a block.
+        this.physics.add.collider(this.player, this.blocks,
+            (player, block) => this.onBlockHit(player, block));
+
         this.physics.add.collider(this.player, this.layer);
         this.physics.add.collider(this.player, this.solids);
         this.physics.add.collider(this.enemies, this.layer);
@@ -208,8 +221,6 @@ export default class LevelScene extends Phaser.Scene {
         this.physics.add.collider(this.enemies, this.blocks);
         this.physics.add.collider(this.powerups, this.blocks);
 
-        this.physics.add.collider(this.player, this.blocks,
-            (player, block) => this.onBlockHit(player, block));
         this.physics.add.overlap(this.player, this.coins,
             (player, coin) => this.onCoin(coin));
         this.physics.add.overlap(this.player, this.powerups,
@@ -263,21 +274,43 @@ export default class LevelScene extends Phaser.Scene {
     onEnemyTouch(enemy) {
         if (this.player.dead || enemy.dying || this.state.finished) return;
 
+        const vx = this.player.body.velocity.x;
         const falling = this.player.body.velocity.y > 40;
-        const above = this.player.body.bottom <= enemy.body.top + 14;
+        // Generous, deliberately: at maxFall Mario covers 12.7px in a step, so a
+        // tight window lets a hard landing skip the stomp and take the hit instead.
+        const above = this.player.body.bottom <= enemy.body.top + 20;
+        // Read before stomp() mutates it -- stomping a *resting* shell kicks it.
+        const resting = enemy instanceof Koopa && enemy.shelled && !enemy.sliding;
 
+        // Coming down on it always counts, grace window or not: landing on a
+        // shell you are chasing is how you stop it, and gating that too made
+        // an overlapping shell unstoppable as well as harmless.
         if (falling && above) {
-            if (enemy.stomp(this.player.x)) {
-                playSfx(this, enemy instanceof Koopa ? 'kick' : 'stomp');
+            if (enemy.stomp(this.player.x, vx)) {
+                playSfx(this, resting ? 'kick' : 'stomp');
                 this.player.bounce(this.keys.jump.isDown || this.altKeys.jump.isDown);
                 this.addScore(RULES.stompScore, enemy.x, enemy.y - TILE);
             }
             return;
         }
 
+        // Overlaps re-fire every step the bodies intersect, so an enemy that was
+        // just stomped or kicked is still inside Mario on the following frames.
+        // Without this window the kick's own follow-up frame kills him.
+        //
+        // It gates the harmful half only. The window is extended for as long as
+        // they stay overlapping, which makes the rule "a shell you just hit
+        // cannot hurt you until you are clear of it" rather than "for N
+        // milliseconds" -- a fixed window is a coin flip when a shell slides
+        // away at barely more than running speed.
+        if (this.time.now < enemy.contactGraceUntil) {
+            enemy.holdContact();
+            return;
+        }
+
         // A resting shell gets kicked rather than hurting you.
-        if (enemy instanceof Koopa && enemy.shelled && !enemy.sliding) {
-            enemy.kick(this.player.x);
+        if (resting) {
+            enemy.kick(this.player.x, vx);
             playSfx(this, 'kick');
             return;
         }
@@ -360,6 +393,11 @@ export default class LevelScene extends Phaser.Scene {
         this.player.setFlipX(false);
         this.player.x = pole.x + 10;
         this.player.anims.stop();
+        // `frozen` stops Player.update before updateAnimation, which is the only
+        // thing that ever resets this -- and play() carries timeScale across. Without
+        // the reset, walkToCastle replays the walk at whatever sprint multiplier
+        // Mario was carrying when he grabbed the pole (up to 1.85x).
+        this.player.anims.timeScale = 1;
         this.player.setFrame(POSE[this.player.size].pole);
 
         // Slide down the pole, flag descending alongside.

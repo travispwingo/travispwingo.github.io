@@ -19,10 +19,10 @@ export const PHYSICS = {
     jumpVelocity: -520,
     jumpHoldMs: 190,                // how long holding jump keeps lifting
     jumpHoldForce: -1400,
-    // Arcade's blocked.down flickers off for single frames while running over
-    // flat ground, so a jump pressed on one of those frames would be dropped.
     // These two windows make the control forgiving and are what stop the game
-    // feeling like it ignores you.
+    // feeling like it ignores you. They are input design, not a workaround:
+    // the blocked.down flicker they were once blamed on was Player.syncBody
+    // running a pass late, and that is fixed (see CLAUDE.md items 2 and 3).
     coyoteMs: 90,                   // still jumpable just after leaving ground
     jumpBufferMs: 120,              // a jump pressed just before landing counts
     maxFall: 760,

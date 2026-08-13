@@ -19,7 +19,53 @@ class Walker extends Phaser.Physics.Arcade.Sprite {
         this.dir = -1;                 // start walking left, toward the player
         this.dying = false;
         this.stopsAtLedges = false;
+        // Ignore player contact until this time -- set after any stomp or kick
+        // so the interaction cannot be re-run while the two are still overlapping.
+        this.contactGraceUntil = 0;
+        // Until sizeBody() is called the body already matches the frame.
+        this.bodyW = this.width;
+        this.bodyH = this.height;
         this.play(anim);
+        this.faceDir();
+    }
+
+    /**
+     * Every frame listed in frames.js faces right, so flip when walking left.
+     * Getting this backwards is invisible on a Koopa (its sheet has a
+     * left-facing band that looks plausible) and glaring on a Galoomba.
+     */
+    faceDir() {
+        this.setFlipX(this.dir < 0);
+    }
+
+    /**
+     * Size the body as a fraction of the current frame, centred horizontally
+     * with its bottom edge on the sprite origin (0.5, 1) -- i.e. on the feet.
+     */
+    sizeBody(wFrac, hFrac) {
+        this.bodyW = this.width * wFrac;
+        this.bodyH = this.height * hFrac;
+        this.body.setSize(this.bodyW, this.bodyH);
+        this.syncBody();
+    }
+
+    /**
+     * Re-anchor the body after the frame changed size -- the same trap
+     * Player.syncBody exists for, and enemies are not exempt. Both walk cycles
+     * change height (Koopa 52/54, Goomba 32/30), so a body offset computed once
+     * in the constructor drifts 2px on alternate animation frames: the Goomba
+     * sinks into the floor and the Koopa lifts clear of it, dropping
+     * `blocked.down` -- which is exactly what patrol()'s ledge probe is gated on.
+     */
+    syncBody() {
+        this.body.setOffset((this.width - this.bodyW) / 2, this.height - this.bodyH);
+    }
+
+    preUpdate(time, delta) {
+        super.preUpdate(time, delta);
+        // Dying enemies have an inert body and a frame from a different pose, so
+        // leave their offset where it was rather than re-deriving it.
+        if (this.body && !this.dying) this.syncBody();
     }
 
     /**
@@ -43,7 +89,26 @@ class Walker extends Phaser.Physics.Arcade.Sprite {
         }
 
         this.body.setVelocityX(this.speed * this.dir);
-        this.setFlipX(this.dir > 0);
+        this.faceDir();
+    }
+
+    /**
+     * Hold off the player-contact handler for a moment.
+     *
+     * Player/enemy contact is an overlap, and Arcade re-runs an overlap
+     * callback on every step the bodies intersect -- there is no once-per-touch
+     * latch. Without this, the frame after Mario kicks a shell he is still
+     * inside it, the shell is now sliding, and the same handler that just
+     * kicked it kills him. Goombas never showed the bug only because being
+     * stomped disables their body outright.
+     *
+     * Extends rather than assigns: onEnemyTouch calls this every overlapping
+     * step to keep the window open, and a plain assignment would let a refresh
+     * move the deadline *backwards* and cut the initial hold short.
+     */
+    holdContact(ms = 200) {
+        this.contactGraceUntil = Math.max(this.contactGraceUntil,
+                                          this.scene.time.now + ms);
     }
 
     /** Fall off the bottom of the screen after being flipped or kicked. */
@@ -60,8 +125,7 @@ export class Goomba extends Walker {
     constructor(scene, x, y) {
         super(scene, x, y, ENEMY.goombaWalk[0], 'goomba-walk');
         this.speed = PHYSICS.enemySpeed;
-        this.body.setSize(this.width * 0.8, this.height * 0.72);
-        this.body.setOffset(this.width * 0.1, this.height * 0.28);
+        this.sizeBody(0.8, 0.72);
     }
 
     /** Stomped: flatten, then vanish. Returns true if this killed it. */
@@ -85,46 +149,54 @@ export class Koopa extends Walker {
         this.shelled = false;
         this.sliding = false;
         this.stopsAtLedges = true;     // Koopas turn back; only shells ride off
-        this.body.setSize(this.width * 0.7, this.height * 0.55);
-        this.body.setOffset(this.width * 0.15, this.height * 0.45);
+        this.sizeBody(0.7, 0.55);
     }
 
     /**
      * First stomp knocks the Koopa into its shell; stomping the resting shell
      * kicks it. A sliding shell is stopped by another stomp.
      */
-    stomp(fromX) {
+    stomp(fromX, fromVx = 0) {
         if (this.dying) return false;
         if (!this.shelled) {
             this.shelled = true;
-            this.sliding = false;
-            this.speed = 0;
-            this.body.setVelocityX(0);
-            this.play('shell-spin');
-            this.anims.stop();
-            this.setFrame(ENEMY.shellStill);
-            // The shell is shorter than the Koopa; keep it on the ground.
-            this.body.setSize(this.width * 0.85, this.height * 0.5);
-            this.body.setOffset(this.width * 0.075, this.height * 0.5);
+            this.restShell();
             return true;
         }
-        if (this.sliding) {
-            this.sliding = false;
-            this.speed = 0;
-            this.body.setVelocityX(0);
-            this.anims.stop();
-            this.setFrame(ENEMY.shellStill);
-        } else {
-            this.kick(fromX);
-        }
+        if (this.sliding) this.restShell();
+        else this.kick(fromX, fromVx);
         return true;
     }
 
-    kick(fromX) {
+    /** Come to rest as a still shell -- both the first stomp and stopping a slide. */
+    restShell() {
+        this.sliding = false;
+        this.speed = 0;
+        this.body.setVelocityX(0);
+        this.anims.stop();
+        this.setFrame(ENEMY.shellStill);
+        // The shell is shorter than the Koopa; keep it on the ground.
+        this.sizeBody(0.85, 0.5);
+        this.holdContact();
+    }
+
+    /**
+     * Send the shell away from whoever hit it. Landing dead on top of it is a
+     * coin flip on sub-pixel position, so inside a small dead zone prefer the
+     * direction the kicker was travelling -- but fall back to which side of the
+     * shell he is standing on before giving up and picking right, or a
+     * stationary kicker always punts it rightward, sometimes under himself.
+     */
+    kick(fromX, fromVx = 0) {
+        const dx = this.x - fromX;
         this.sliding = true;
         this.speed = PHYSICS.shellSpeed;
-        this.dir = fromX <= this.x ? 1 : -1;
+        this.dir = Math.abs(dx) > 3
+            ? Math.sign(dx)
+            : (Math.sign(fromVx) || Math.sign(dx) || 1);
         this.play('shell-spin');
+        this.faceDir();
+        this.holdContact();
     }
 
     patrol(layer) {
@@ -138,6 +210,9 @@ export class Koopa extends Walker {
             if (this.body.blocked.left) this.dir = 1;
             else if (this.body.blocked.right) this.dir = -1;
             this.body.setVelocityX(this.speed * this.dir);
+            // The spin frames are strongly asymmetric, so a stale flip spins the
+            // shell against its own direction of travel.
+            this.faceDir();
             return;
         }
         super.patrol(layer);

@@ -67,10 +67,11 @@ It exists because the raw rips cannot be used directly:
 - **Transparent pixels carry leftover background colour**, so filtered sampling haloes the sprite edges. The pipeline overwrites the RGB of transparent pixels with their nearest opaque neighbour.
 - **Scales differ.** The SMW object and enemy rips are 2x nearest-neighbour upscales of the 16x16 originals; `smw-mario.png` and the SMB1 sheets are 1x. Everything is normalised to **2x**, so the game has one world scale and `TILE = 32`.
 - **Nothing is on a uniform grid**, so a tileset for `TilemapLayer` has to be cropped and repacked, with 1px edge extrusion to stop seams at fractional zoom.
+- **`smw-mario.png` carries two near-identical palettes.** Small Mario's sprint lean is the only pose the game uses from the second one, so animating it beside its neighbours shifted his whole tone. `SMW_MARIO_ALIASES` folds one onto the other in twelve entries — ten of them move 3–9 units, while the outline black (`(41,41,41)` → pure black) and the two overall-button yellows move much further. That spread is exactly why it is a written-out table rather than a nearest-colour snap: no single threshold catches those three without also eating the near-greys and near-reds belonging to other power-ups. Alpha is untouched, so frame bounds and the pack layout are unaffected: re-running the pipeline changes `atlas.png` and leaves `atlas.json` byte-identical.
 
 Frames are named positionally (`mario_r4_c8` = row band 4, sprite 8) so the pipeline stays mechanical. The mapping from positions to poses lives in `src/frames.js` — that is the file to edit when a pose looks wrong, not the pipeline.
 
-A useful property of these sheets: **every row is mirror-symmetric**, so only right-facing frames are listed and `setFlipX` handles the rest.
+The two sheets mirror differently, and assuming otherwise is what made the Galoomba walk backwards. The **Mario** sheet mirrors *within* a row, so the right half of a row is the left half flipped. The **enemy** sheet mirrors *across* bands, with the column order reversing too (`enemy_r7_c0` is `enemy_r6_c1` flipped) — pick a whole band per direction there, never a column position. Either way only right-facing frames are listed and `setFlipX` handles the rest.
 
 ## Architecture
 
@@ -85,9 +86,9 @@ These are all bugs that were hit and fixed here; the fixes are load-bearing.
 
 1. **Never tween the position of a dynamic Arcade body.** The body writes the transform back every step, so the tween silently does nothing. Move it with velocity, or disable the body (`body.enable = false`) and let the tween own the transform — which is what the flagpole cutscene does.
 
-2. **`blocked.down` flickers false for single frames** while running over flat ground. Testing `JustDown(jump) && onGround` therefore throws away real jump presses. Read `JustDown` unconditionally into a buffer and pair it with a coyote-time window (see `Player.update`).
+2. **`blocked.down` looked like it flickered false for single frames** while running over flat ground, which made `JustDown(jump) && onGround` throw away real jump presses. It was never an Arcade quirk — it was item 3 below, and it is fixed. The buffered `JustDown` and the coyote window in `Player.update` stay because they are good input design, not because the engine needs working around.
 
-3. **An Arcade body does not follow a frame size change.** Frames here are tight-cropped and differ in height (big Mario's jump is 62px against 56 idle), so the body offset is recomputed every tick in `Player.syncBody()`. Without it Mario hovers on some frames and sinks into the floor on others.
+3. **An Arcade body does not follow a frame size change, and *when* you resync matters.** Frames here are tight-cropped and differ in height (big Mario's jump is 62px against 56 idle), so `Player.syncBody()` recomputes the body offset from the current frame. It has to run in `Player.preUpdate`, right after `super.preUpdate` advances the animation. Resyncing from `Scene.update` instead leaves the offset one pass stale, because the scene's update runs *after* the physics step: on any frame that grew, the body lifts clear of the floor for exactly one step, `blocked.down` drops, and the animation flashes the jump pose and restarts the walk cycle. Five seconds of running produced 75 of those flashes and 50 restarts, and big Mario never reached the third frame of his walk. Enemies are not exempt — their walk cycles change height too (Koopa 52/54, Goomba 32/30), so `Walker` carries the same `syncBody`/`preUpdate` pair.
 
 4. **`game.sound.mute` does not read back synchronously.** Phaser 4 backs it with a Web Audio gain node — the getter is `masterMuteNode.gain.value === 0` and the setter schedules the change. `!game.sound.mute` reads a stale value, so `audio.js` keeps the authoritative flag and treats Phaser and localStorage as followers.
 
@@ -96,6 +97,10 @@ These are all bugs that were hit and fixed here; the fixes are load-bearing.
 6. **`scene.restart()` re-runs `create()`**, so anything that must survive a death goes through `init(data)`. Otherwise lives reset and the game can never end.
 
 7. **A static body sizes itself from its game object.** `setSize()` followed by `updateFromGameObject()` is overwritten. Use a Zone, which carries real dimensions — see `makePipe`.
+
+8. **Collider registration order decides who wins a tie.** Arcade runs colliders in registration order within a step, and Arcade's AABB test treats exactly-touching edges as *not* intersecting. Most `?` blocks sit flush between solid tiles in the same row, so with the tilemap collider registered first it separated Mario to exactly the tile's bottom edge — the block's bottom edge too — and the block collider that ran next saw no overlap and never fired. The bump silently vanished on roughly three hits in four. `player`-vs-`blocks` is therefore registered first in `createColliders`, and the same trap is waiting for `solids` if a pipe ever abuts a block.
+
+9. **An overlap callback re-fires every step the bodies intersect.** There is no once-per-touch latch. Mario kicking a shell leaves him inside it for the next few frames, and the same handler that kicked it then reads "sliding shell touching Mario" and kills him — which is why landing on a shell was fatal about half the time, and running into one about nine times in ten. Enemies carry a `contactGraceUntil` stamp (`Walker.holdContact`, which *extends* rather than overwrites) that `onEnemyTouch` honours and refreshes while the two stay overlapping, so the rule is "you are safe from a shell until you are clear of it". It gates only the branches that can hurt you — stomping still runs, or a shell you are chasing would be unstoppable as well as harmless. Goombas never showed the bug only because being stomped disables their body outright.
 
 ## Testing in a hidden tab
 

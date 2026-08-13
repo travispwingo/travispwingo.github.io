@@ -100,10 +100,55 @@ def chroma(a: np.ndarray, colour: tuple[int, int, int]) -> np.ndarray:
     return a
 
 
-def sheet(name: str, scale: int = 1, key: tuple[int, int, int] | None = None) -> np.ndarray:
+# smw-mario.png was ripped in two sittings and carries two near-identical
+# palettes. Most of the poses the game uses are in the first, but small Mario's
+# sprint lean (band 0, c0/c7) is in the second, so animating it against its
+# neighbours shifted Mario's whole tone. These twelve entries alias the second
+# palette onto the first. Ten of them move only 3-9 units; the outline black
+# ((41,41,41) -> pure black) and the two overall-button yellows move much
+# further, which is exactly why this is a written-out table and not a
+# nearest-colour snap -- no single distance threshold catches those three
+# without also eating the near-greys and near-reds of the other power-ups.
+SMW_MARIO_ALIASES = {
+    (41, 41, 41): (0, 0, 0),            # outline
+    (140, 90, 24): (143, 88, 31),       # boots / hair
+    (255, 214, 198): (255, 208, 192),   # skin
+    (255, 115, 107): (255, 112, 111),   # cap highlight
+    (255, 255, 255): (255, 248, 255),   # gloves
+    (181, 41, 99): (176, 40, 96),       # cap shadow
+    (66, 132, 156): (64, 128, 159),     # overalls shadow
+    (255, 66, 115): (255, 64, 112),     # cap
+    (33, 49, 140): (32, 48, 143),       # overalls
+    (132, 222, 206): (128, 216, 207),   # shirt
+    (255, 255, 156): (255, 216, 112),   # buttons highlight
+    (255, 222, 0): (223, 160, 63),      # buttons
+}
+
+
+def realias(a: np.ndarray, aliases: dict) -> np.ndarray:
+    """Fold duplicate palette entries onto one canonical colour.
+
+    Exact matches only, and alpha is untouched, so frame bounds and therefore
+    the packed atlas layout are unaffected -- only pixel colour changes.
+
+    Every match is tested against the *original* pixels, so adding an entry
+    whose destination is another entry's source cannot double-map and the
+    result does not depend on the order the table is written in.
+    """
+    out = a.copy()
+    src_rgb, dst_rgb = a[..., :3], out[..., :3]
+    for src, dst in aliases.items():
+        dst_rgb[(src_rgb == src).all(axis=-1)] = dst
+    return out
+
+
+def sheet(name: str, scale: int = 1, key: tuple[int, int, int] | None = None,
+          aliases: dict | None = None) -> np.ndarray:
     a = load(name)
     if key is not None:
         a = chroma(a, key)
+    if aliases:
+        a = realias(a, aliases)
     a = defringe(a)
     return upscale(a, scale) if scale > 1 else a
 
@@ -437,7 +482,7 @@ def main() -> None:
 
     objects = sheet("mario-objects.png")       # already 2x
     enemies = sheet("mario-enemies.png")       # already 2x
-    mario = sheet("smw-mario.png", 2)          # 1x -> 2x
+    mario = sheet("smw-mario.png", 2, aliases=SMW_MARIO_ALIASES)   # 1x -> 2x
     smb1 = sheet("smb1-tileset.png", 2)        # 1x -> 2x
     # castle.png ships its sky as opaque blue rather than alpha.
     castle = sheet("smb1-castle.png", 2, key=(99, 173, 255))

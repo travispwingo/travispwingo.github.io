@@ -66,11 +66,33 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
      * change, so a fixed offset would leave him hovering on some frames and
      * sunk into the floor on others. Recomputing from the current frame keeps
      * the body's bottom edge exactly at the sprite origin (0.5, 1), which is
-     * frame-independent, so this is stable to call every tick.
+     * frame-independent.
+     *
+     * WHEN this runs is as load-bearing as the maths. The offset is derived
+     * from `this.height`, so it has to be recomputed in the same pass that
+     * changed the frame -- see preUpdate.
      */
     syncBody() {
         const b = BODY[this.size];
         this.body.setOffset((this.width - b.w) / 2, this.height - b.h);
+    }
+
+    /**
+     * Advance the animation, then immediately re-derive the body offset.
+     *
+     * Doing this from Scene.update() instead leaves the offset one frame stale,
+     * because the scene's update runs after the physics step rather than
+     * between the frame change and the body reading the transform. On any step
+     * where the frame grew, the stale (smaller) offset lifts the body clear of
+     * the floor for exactly one frame: `blocked.down` drops, the animation
+     * switches to the jump pose, and the next frame restarts the walk cycle at
+     * frame 0. That is the "Mario flickers instead of running" bug, and it also
+     * produced the phantom `blocked.down` flicker the jump code was written
+     * around.
+     */
+    preUpdate(time, delta) {
+        super.preUpdate(time, delta);
+        this.syncBody();
     }
 
     grow() {
@@ -109,6 +131,10 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
 
     bounce(held) {
         this.body.setVelocityY(held ? PHYSICS.stompBounceHeld : PHYSICS.stompBounce);
+        // Same reason the jump does it: the animation reads the coyote window,
+        // so leaving lastGroundedAt alone would keep the walk cycle running for
+        // up to coyoteMs while Mario is launched off an enemy's head.
+        this.lastGroundedAt = -Infinity;
     }
 
     update(time, keys) {
@@ -179,15 +205,40 @@ export default class Player extends Phaser.Physics.Arcade.Sprite {
             this.jumpHeldUntil = 0;
         }
 
-        this.updateAnimation(onGround, dir, skidding);
-        this.syncBody();
+        // Animate off the coyote window rather than the raw contact flag: a
+        // single lost frame of ground contact should not flash the jump pose.
+        // Re-read it, because taking the jump above clears lastGroundedAt --
+        // that is what puts Mario into the jump pose on the launching frame.
+        const stillGrounded = time - this.lastGroundedAt <= PHYSICS.coyoteMs;
+        this.updateAnimation(stillGrounded, skidding);
     }
 
-    updateAnimation(onGround, dir, skidding) {
+    updateAnimation(grounded, skidding) {
         const p = this.size;
-        if (!onGround) this.play(`${p}-jump`, true);
-        else if (skidding) this.play(`${p}-skid`, true);
-        else if (Math.abs(this.body.velocity.x) > 12) this.play(`${p}-walk`, true);
-        else this.play(`${p}-idle`, true);
+        const speed = Math.abs(this.body.velocity.x);
+
+        // Reset first, in one place. `anims.timeScale` is sprite-scoped and
+        // survives play(), so a pose that forgets to clear it inherits the
+        // sprint multiplier -- see the reset in Level.finishLevel for the path
+        // that leaves this function unreachable entirely.
+        this.anims.timeScale = 1;
+
+        if (!grounded) {
+            this.play(`${p}-jump`, true);
+            return;
+        }
+        if (skidding) {
+            this.play(`${p}-skid`, true);
+            return;
+        }
+        if (speed <= 12) {
+            this.play(`${p}-idle`, true);
+            return;
+        }
+
+        // Neither sheet has a separate sprint pose, so running is the walk cycle
+        // with the steps quickened -- which is all the originals do either.
+        this.anims.timeScale = Phaser.Math.Clamp(speed / PHYSICS.walkSpeed, 0.55, 1.9);
+        this.play(`${p}-walk`, true);
     }
 }
