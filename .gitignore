@@ -3,3 +3,6 @@ _site
 .jekyll-cache
 .jekyll-metadata
 vendor
+
+# Claude Code local settings (not for publishing)
+.claude/settings.local.json
